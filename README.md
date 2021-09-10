@@ -70,3 +70,21 @@ Discord
 
 
 ### Montrer mes projets githubs sous forme de card
+
+
+### Logo - 
+computer science, ux-design, front-end developper, back-end developper, IA, python, competitive - programmanig
+
+computer, brain, smartphone, tree, maze
+
+Bleu: sincérité, optimisme, implication
+Vert: stabilité, l’espoir, l’écologie 
+Jaune: luminosité, aisance relationelle
+
+Il faut: blanc, une nuance de Bleu (2 mais une pale et une peps), 2 nuances de gris
+
+### Landing page
+
+A quoi sert la landing page?
+Me présenter moi
+https://www.mailerlite.com/blog/best-landing-pages
