@@ -88,3 +88,11 @@ Il faut: blanc, une nuance de Bleu (2 mais une pale et une peps), 2 nuances de g
 A quoi sert la landing page?
 Me présenter moi
 https://www.mailerlite.com/blog/best-landing-pages
+
+### Charte graphique
+
+Orange: #F4661B
+Blue: #000033
+
+Title: Poppins
+Text: Mulish
