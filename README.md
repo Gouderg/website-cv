@@ -83,11 +83,17 @@ Jaune: luminosité, aisance relationelle
 
 Il faut: blanc, une nuance de Bleu (2 mais une pale et une peps), 2 nuances de gris
 
+Phrase d'accroche:
+Curieux et passioné dans le domaine de la tech. 
+Highly motivated and passionate about computer science. I am looking for a student job or an internship. 
+
+
 ### Landing page
 
 A quoi sert la landing page?
 Me présenter moi
 https://www.mailerlite.com/blog/best-landing-pages
+https://dribbble.com/shots/16242676/attachments/8106938?mode=media
 
 ### Charte graphique
 
