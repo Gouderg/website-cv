@@ -95,10 +95,4 @@ Me présenter moi
 https://www.mailerlite.com/blog/best-landing-pages
 https://dribbble.com/shots/16242676/attachments/8106938?mode=media
 
-### Charte graphique
 
-Orange: #F4661B
-Blue: #000033
-
-Title: Poppins
-Text: Mulish
