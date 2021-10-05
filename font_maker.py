@@ -3,15 +3,15 @@ from os.path import join
 
 # Path to folder
 PATH_TO_WRITE = "stylesheet/font.css"
-PATH = "fonts"
+PATH = "res/fonts"
 
 # Open font.css
 file = open(PATH_TO_WRITE, "w")
 
 for path, dirs, files in walk(PATH):
-    if len(path.split('/')) > 1:
+    if len(path.split('/')) > 2:
         # Écriture de chaque commentaire
-        file.write('/* '+path.split('/')[1]+' */\n\n')
+        file.write('/* '+path.split('/')[2]+' */\n\n')
         for filename in files:
             path_font = join(path,filename)
             path_font = join('..', path_font)
