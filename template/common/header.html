@@ -1,0 +1,35 @@
+<div class="logo">
+    <img src="../../assets/res/img/logo.svg" alt="logo">
+    <h1 class="logo-text">ILLIEN Victor</h1>
+</div>
+
+<nav class="menu">
+    <ul>
+        <li class="menu-text"><a id='1' href="../../index.html">About</a></li>
+        <li class="menu-text"><a id='2' href="../template/workexperience.html">Work Experience</a></li>
+        <li class="menu-text"><a id='3' href="../template/skills.html">Skills</a></li>
+        <li class="menu-text"><a id='4' href="../template/projects.html">Projects</a></li>
+        <li class="menu-text"><a id='5' href="../template/current_setup.html">Current Setup</a></li>
+    </ul>
+</nav>
+
+<div class="call">
+    <div class="box">
+        <img src="../../assets/res/img/svg-menu/phone.svg" alt="phone">
+        <h1 class="call-text">Let's talk</h1>
+    </div>
+</div>
+
+<script defer>
+    // Highlight the good page.
+    var path = {
+        'index': '1',
+        'workexperience': '2',
+        'skills': '3',
+        'projects': '4',
+        'current_setup': '5'
+    };
+    var ids = path[(window.location.href).split('/')[(window.location.href).split('/').length - 1].replace('.html', '')];
+    console.log(document.getElementById(ids));
+    document.getElementById(ids).style.color = 'var(--secondary-blue';
+</script>
