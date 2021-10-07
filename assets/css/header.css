@@ -10,12 +10,17 @@ body {
 
     background-repeat: no-repeat;
     min-height: 100vh;
+
 }
 
 header {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+main {
+    min-height: 80vw;
 }
 
 .logo {
@@ -53,13 +58,17 @@ header {
     display: inline;
 }
 
-.menu ul li a {
+.menu-text {
+    display: inline-block;
     text-decoration: none;
     color: white;
     font-family: 'Poppins-ExtraBold';
     font-size: 1.7em;
 }
 
+.menu-text:hover {
+    scale: 1.2;
+}
 .menu-text-highlight {
     color: var(--secondary-blue);
 }
@@ -90,4 +99,86 @@ header {
     font-family: 'Poppins-ExtraBold';
     font-size: 1.1em;
     margin: 20px 0;
+}
+
+.call-icon {
+    font-size: 2em;
+    margin: 12px 0;
+    color: white;
+}
+
+/* Responsive */
+header .menu-burger {
+    color: white;
+    font-size: 3rem;
+    width: 25%;
+    text-align: end;
+    margin-right: 20px;
+    display: none;
+}
+.resp-menu {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    main {
+        min-height: 200vw;
+    }
+
+    .menu,
+    .call {
+        display: none;
+    }
+
+    header .menu-burger,
+    section.open
+    {
+        display: block;
+    }
+
+    .logo {
+        width: 75%;
+    }
+
+    .menu-burger {
+        flex-direction: column;
+    }
+
+    .resp-menu-item {
+        text-decoration: none;
+        color: white;
+        font-family: 'Poppins-ExtraBold';
+        font-size: 1.7em;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .resp-menu-item-highlight {
+        color: var(--secondary-blue);
+        
+    }
+    .resp-menu-item-highlight svg {
+        fill: var(--secondary-blue);
+    }
+
+    .resp-menu-text {
+        padding-left: 15px;
+    }
+
+    .resp-nav {
+        width: 100%;
+        align-items: center;
+        margin-top: 30%;
+    }
+    
+    .resp-nav ul {
+        list-style: none;
+        text-align: left;
+    }
+    
+    .resp-nav ul li {
+        padding: 2%;
+    }
+    
+    
 }
