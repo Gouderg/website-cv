@@ -1,4 +1,11 @@
-'use strict'
+'use strict';
+
+function backToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
 
 async function copyDiscord() {
     try {

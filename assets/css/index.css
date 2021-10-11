@@ -1,0 +1,239 @@
+main {
+    display: flex;
+    flex-direction: column;
+    font-size: 68px;
+}
+
+/* First section. */
+.presentation {
+    display: flex;
+    flex-direction: row;
+}
+
+.presentation-left {
+    width: 55%;
+    color: white;
+    font-family: 'Poppins-Medium';
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.presentation-right {
+    width: 45%;
+}
+
+.presentation-left-pres {
+    font-size: 1em;
+}
+
+.pres-bold {
+    font-family: 'Poppins-ExtraBold';
+}
+
+.pres-under {
+    text-decoration: underline var(--primary-orange);;
+}
+
+.presentation-left-desc {
+    font-size: 0.3em;
+    width: 70%;
+}
+
+.button-main {
+    background-color: var(--primary-orange);
+    border-radius: 10px;
+    width: 30%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: background-color 0.6s;
+}
+
+.button-main-lien {
+    font-family: 'Poppins-Bold';
+    font-size: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.button-main:hover,
+.button-resume:hover,
+.button-discover:hover {
+
+    scale: 1.1;
+    background-color: var(--secondary-blue);
+}
+
+/* Intersection. */
+.arrow {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.arrow-up {
+    margin-bottom: 5%;
+    text-align: center;
+    rotate: 180deg;
+}
+
+.arrow-up:hover,
+.arrow:hover {
+    cursor: pointer;
+}
+
+.arrow-up img,
+.arrow img {
+    height: 1.5em;
+    animation: bounce 0.5s ease-out infinite alternate;
+}
+
+@keyframes bounce {
+    from {transform: translateY(0);}
+    to   {transform: translateY(-20px);}
+}
+
+/* Second section.  */
+.should-hire-me {
+    margin: 15% 0%;
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+.highlight {
+    color: var(--primary-orange);
+}
+
+.title-hire {
+    font-family: 'Poppins-ExtraBold';
+    text-align: center;
+    font-size: 1em;
+}
+
+.should-hire-me > div {
+    margin: 5% 10% 0% 10%;
+}
+
+.sub-title-hire {
+    font-family: 'Poppins-ExtraBold';
+    font-size: 0.6em;
+}
+
+.sub-para {
+    font-family: 'Raleway-SemiBold';
+    font-size: 0.4em;
+    text-align: justify;
+    padding: 5%;
+}
+
+.button-resume,
+.button-discover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-orange);
+    border-radius: 10px;
+    width: 20%;
+    margin-left: 5%;
+    box-shadow: rgba(244, 102, 27, 0.25) 0px 8px 16px, rgba(244, 102, 27, 0.22) 0px 6px 6px;
+    transition: background-color 0.6s;
+}
+
+.button-resume-lien {
+    font-family: 'Poppins-Bold';
+    font-size: 0.4em;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.button-discover-lien {
+    font-family: 'Poppins-Bold';
+    font-size: 0.3em;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.skills-container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Raleway-Bold';
+    font-size: 0.3em;
+    margin-bottom: 10%;
+}
+
+.skills-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.skills-img > img {
+    width: 100px;
+    height: auto;
+}
+
+.skills-website {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.website-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Raleway-Bold';
+    font-size: 0.4em;
+    
+}
+
+.website-container a {text-decoration: none;}
+
+figure {
+    text-align: center;
+    color: white;
+}
+.website-container-img {
+    width: 150px;
+    height: auto;
+}
+
+@media  (max-width: 950px) {
+    main {
+        font-size: 36px;
+    }
+
+    .presentation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .presentation-left, .presentation-right {
+        width: 100%;
+    }
+
+    .website-container-img {
+        width: 75px;
+        height: auto;
+    }
+
+    .skills-img > img {
+        width: 50px;
+        height: auto;
+    }
+}

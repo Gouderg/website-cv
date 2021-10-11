@@ -4,35 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio | About</title>
 
     <!-- Import CSS -->
     <link href="assets/css/color.css" rel="stylesheet">
     <link href="assets/css/font.css" rel="stylesheet">
     <link href="assets/css/header.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
-    
-    <!-- Import JS -->
-    <script type="text/javascript" src="/assets/js/header.js" defer></script>
-    <script type="text/javascript" src="/assets/js/footer.js" defer></script>
+    <link href="assets/css/index.css" rel="stylesheet">
 
+    <!-- Import JS -->
+    <script type="text/javascript" src="assets/js/header.js" defer></script>
+    <script type="text/javascript" src="assets/js/footer.js" defer></script>
+    <script type="text/javascript" src="assets/js/index.js" defer></script>
 
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="../../assets/res/img/logo.svg" alt="logo">
+            <img src="assets/res/img/logo.svg" alt="logo">
             <h1 class="logo-text">ILLIEN Victor</h1>
         </div>
         
         <nav class="menu">
-            <ul>
-                <li><a class="menu-text" id='1' href="../../">About</a></li>
-                <li><a class="menu-text" id='2' href="../template/workexperience.html">Work Experience</a></li>
-                <li><a class="menu-text" id='3' href="../template/skills.html">Skills</a></li>
-                <li><a class="menu-text" id='4' href="../template/projects.html">Projects</a></li>
-                <li><a class="menu-text" id='5' href="../template/current_setup.html">Current Setup</a></li>
-            </ul>
+            <li><a class="menu-text" id='1' href="../../">About</a></li>
+            <li><a class="menu-text" id='2' href="../template/workexperience.html">Work Experience</a></li>
+            <li><a class="menu-text" id='3' href="../template/projects.html">Projects</a></li>
+            <li><a class="menu-text" id='4' href="../template/current_setup.html">Current Setup</a></li>
         </nav>
         
         <div class="call">
@@ -46,38 +44,138 @@
     <!-- Section use to the burger menu -->
     <section id="responsive-menu" class="resp-menu">
         <nav class="resp-nav">
-            <ul>
-                <li>
-                    <a class="resp-menu-item" id='11' href="../../">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
-                        <span class="resp-menu-text">About</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="resp-menu-item" id='22' href="../template/workexperience.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
-                        <span class="resp-menu-text">Work Experience</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="resp-menu-item" id='33' href="../template/skills.html"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><rect fill="none" height="24" width="24"/><path d="M9.68,13.69L12,11.93l2.31,1.76l-0.88-2.85L15.75,9h-2.84L12,6.19L11.09,9H8.25l2.31,1.84L9.68,13.69z M20,10 c0-4.42-3.58-8-8-8s-8,3.58-8,8c0,2.03,0.76,3.87,2,5.28V23l6-2l6,2v-7.72C19.24,13.87,20,12.03,20,10z M12,4c3.31,0,6,2.69,6,6 s-2.69,6-6,6s-6-2.69-6-6S8.69,4,12,4z M12,19l-4,1.02v-3.1C9.18,17.6,10.54,18,12,18s2.82-0.4,4-1.08v3.1L12,19z"/></svg>
-                        <span class="resp-menu-text">Skills</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="resp-menu-item" id='44' href="../template/projects.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>
-                        <span class="resp-menu-text">Projects</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="resp-menu-item" id='55' href="../template/current_setup.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/></svg>
-                        <span class="resp-menu-text">Current Setup</span>
-                    </a>
-                </li>
-            </ul>
+            <li>
+                <a class="resp-menu-item" id='11' href="../../">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                    <span class="resp-menu-text">About</span>
+                </a>
+            </li>
+            <li>
+                <a class="resp-menu-item" id='22' href="../template/workexperience.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                    <span class="resp-menu-text">Work Experience</span>
+                </a>
+            </li>
+            <li>
+                <a class="resp-menu-item" id='33' href="../template/projects.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>
+                    <span class="resp-menu-text">Projects</span>
+                </a>
+            </li>
+            <li>
+                <a class="resp-menu-item" id='44' href="../template/current_setup.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/></svg>
+                    <span class="resp-menu-text">Current Setup</span>
+                </a>
+            </li>
         </nav>
     </section>
     <main>
+        <!-- First section. -->
+        <section class="presentation">
+            <div class="presentation-left">
+                <div class="presentation-left-pres">
+                    <p>I'm <span class="pres-bold">ILLIEN Victor,<br> <span class="pres-under">Engineer Computer</span><br>Student</span></p>
+                </div>
+                <div class="presentation-left-desc">
+                    <p>Highly motivated and passionate about computer science.<br>I am looking for a student job or an internship.</p>
+                </div>
+                <div class="button-main">
+                    <a class="button-main-lien" href="https://www.linkedin.com/in/victor-illien-5b10031b2/" target="_blank">Hire me</a>
+                </div>
+
+            </div>
+            <div class="presentation-right">
+            </div>
+        </section>
+        
+        <!-- Intersection -->
+        <div class="arrow" onclick="goTo('hire')">
+            <img src="assets/res/img/svg-menu/down-arrow-blue.png" alt="down-arrow">
+        </div>
+
+        <!-- Second section -->
+        <section id="hire" class="should-hire-me">
+            <h1 class="title-hire"><span class="highlight">Why</span> Should You Hire Me?</h1>
+            <div class="studies">
+                <ul class="sub-title-hire"><li><h1>My <span class="highlight">S</span>tudies</h1></li></ul>
+                <p class="sub-para">
+                    I am currently in my 4th year of engineering school at ISEN YNCREA OUEST in Brest. My first 3 years were devoted to the basic curriculum of an engineer. I was able to discover electronics on embedded systems. In addition, I was in a special course, which over the three years gave me a Full Stack developer's background.
+                    During my last two years, I will specialise in the field of biomedical and health technologies.
+                </p>
+                <div class="button-resume">
+                    <a class="button-resume-lien" href="assets/res/pdf/cv.pdf" target="_blank">My resume</a>
+                </div>
+            </div>
+            <div class="skills">
+                <ul class="sub-title-hire"><li><h1>My <span class="highlight">S</span>kills</h1></li></ul>
+                <div class="skills-container">
+                    <div>
+                        <h3>Front-end</h3>
+                        <div class="skills-img">
+                            <img src="assets/res/img/svg-skills/html.svg" alt="icon-html" title="html">
+                            <img src="assets/res/img/svg-skills/css.svg" alt="icon-css" title="css">
+                            <img src="assets/res/img/svg-skills/js.svg" alt="icon-js" title="js">
+                            <img src="assets/res/img/svg-skills/react.svg" alt="icon-react" title="react">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Back-end</h3>
+                        <div class="skills-img">
+                            <img src="assets/res/img/svg-skills/php.svg" alt="icon-php" title="php">
+                            <img src="assets/res/img/svg-skills/symfony.svg" alt="icon-symfony" title="symfony">
+                            <img src="assets/res/img/svg-skills/mysql.svg" alt="icon-mysql" title="mysql">
+                            <img src="assets/res/img/svg-skills/mongodb.svg" alt="icon-mongodb" title="mongodb">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Others</h3>
+                        <div class="skills-img">
+                            <img src="assets/res/img/svg-skills/c.svg" alt="icon-c" title="C">
+                            <img src="assets/res/img/svg-skills/c++.svg" alt="icon-c++" title="C++">
+                            <img src="assets/res/img/svg-skills/python.svg" alt="icon-python" title="python">
+                            <img src="assets/res/img/svg-skills/java.svg" alt="icon-java" title="java">
+                        </div> 
+                    </div>
+                </div>
+                <div class="skills-website">
+                    <h3>Website I use to improve my logic and python skills.</h3>
+                    <div class="website-container">
+                        <a href="https://adventofcode.com/" target="_blank">
+                            <figure>
+                                <img src="assets/res/img/svg-skills/Advent_Of_Code_Logo.png" alt="aoc" title="aoc" class="website-container-img">
+                                <figcaption>Advent of code</figcaption>
+                            </figure>
+                        </a>
+                        <a href="https://www.hackerrank.com/gouderg" target="_blank">
+                            <figure>
+                                <img src="assets/res/img/svg-skills/HackerRank_logo.png" alt="hackerrank" title="hackerrank" class="website-container-img">
+                                <figcaption>Hackerrank</figcaption>
+                            </figure>
+                        </a>
+                        <a href="https://pydefis.callicode.fr/user/mhof/Groderg/7416186026f95e4a" target="_blank">
+                            <figure>
+                                <img src="assets/res/img/svg-skills/callicode-logo.png" alt="pydefi" title="pydefi" class="website-container-img">
+                                <figcaption>Pydefi</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="motivation">
+                <ul class="sub-title-hire"><li><h1>My <span class="highlight">M</span>otivation</h1></li></ul>
+                <p class="sub-para">
+                    Curious by nature, I am constantly looking for ways to improve myself, especially with personal projects on different themes and languages.
+                    Moreover, I have carried out professional projects for the junior company of my school. This allowed me to confront myself with the expectations of clients.
+                </p>
+                <div class="button-discover">
+                    <a class="button-discover-lien more-space" href="../template/projects.html" target="_blank">Discover my project</a>
+                </div>
+            </div>
+        </section>
+        
+        <div class="arrow-up" onclick="backToTop()">
+            <img src="assets/res/img/svg-menu/down-arrow-blue.png" alt="down-arrow">
+        </div>
+        
         
     </main>
     <footer class="footer">
@@ -85,10 +183,10 @@
             <div id="validate" class="validate-box">
                 <span class="validate-message">Copied !</span>
             </div>
-            <img class='icon' src="/assets/res/img/svg-footer/whitediscord.svg" alt="discord" onclick="copyDiscord()" title="gouderg#5425">
-            <a href="https://www.linkedin.com/in/victor-illien-5b10031b2/"><img class='icon' src="/assets/res/img/svg-footer/LinkedINlinkldin.svg" alt="linkdlin"></a>
-            <a href="https://github.com/Gouderg"><img class='icon' src="/assets/res/img/svg-footer/whitegithub.svg" alt="github"></a>
-            <img class='icon' src="/assets/res/img/svg-footer/whitegmail.svg" alt="gmail" onclick="copyGmail()" title="victor.illien974@gmail.com">
+            <img class='icon' src="assets/res/img/svg-footer/whitediscord.svg" alt="discord" onclick="copyDiscord()" title="gouderg#5425">
+            <a href="https://www.linkedin.com/in/victor-illien-5b10031b2/"><img class='icon' src="assets/res/img/svg-footer/LinkedINlinkldin.svg" alt="linkdlin"></a>
+            <a href="https://github.com/Gouderg"><img class='icon' src="assets/res/img/svg-footer/whitegithub.svg" alt="github"></a>
+            <img class='icon' src="assets/res/img/svg-footer/whitegmail.svg" alt="gmail" onclick="copyGmail()" title="victor.illien974@gmail.com">
         </div>
         <div class="copyright">Copyright © 2021</div>
     </footer>

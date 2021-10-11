@@ -18,7 +18,7 @@ function unrollMenu() {
     if (x.className === "resp-menu") {
         x.className += " open";
         y.innerHTML = "&#10137;"
-        highlight({'index': '11','workexperience': '22','skills': '33','projects': '44','current_setup': '55'}, 'resp-menu-item-highlight');
+        highlight({'index': '11','workexperience': '22','projects': '33','current_setup': '44'}, 'resp-menu-item-highlight');
 
     } else {
         x.className = "resp-menu";
@@ -26,4 +26,4 @@ function unrollMenu() {
     }
 }
 
-highlight({'index': '1','workexperience': '2','skills': '3','projects': '4','current_setup': '5'}, 'menu-text-highlight');
+highlight({'index': '1','workexperience': '2','projects': '3','current_setup': '4'}, 'menu-text-highlight');
