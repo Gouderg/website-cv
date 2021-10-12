@@ -22,28 +22,37 @@ main {
 }
 
 .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     width: 15%;
 }
 
-.logo img {
+.logo-lien {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-photo {
     width: 12vw;
     max-width: 125px;
     height: auto;
     padding: 2%;
+    animation:spin 4s linear infinite;
 }
 
 .logo-text {
     font-family: 'Poppins-ExtraBold';
     font-size: 1.3em;
     color: white;
+}
 
+@keyframes spin { 
+    100% { transform:rotate(360deg); 
+    } 
 }
 
 .menu {
-    width: 70%;
+    width: 60%;
     text-align: end;
 }
 
@@ -69,13 +78,25 @@ main {
 }
 
 .call {
-    width: 15%;
+    width: 25%;
     box-align: center;
     display: flex;
     justify-content: center;
 }
 
-.box {
+.language:hover {
+    cursor: pointer;
+}
+.language {
+    color: white;
+    font-family: 'Poppins-ExtraBold';
+    font-size: 2em;
+}
+
+.active {
+    color: var(--secondary-blue);
+}
+/* .box {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -100,7 +121,7 @@ main {
     font-size: 2em;
     margin: 12px 0;
     color: white;
-}
+} */
 
 /* Responsive */
 header .menu-burger {
