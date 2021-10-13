@@ -4,4 +4,18 @@
     --primary-orange-fade: rgba(244, 102, 27, 0.5);
     --secondary-blue: #1E71C7;
     --light-grey: rgba(26, 26, 26, 0.7);
+
+
+    --breath0: rgba(244, 102, 27, 0.500);
+    --breath10: rgba(244, 102, 27, 0.495);
+    --breath20: rgba(244, 102, 27, 0.490);
+    --breath30: rgba(244, 102, 27, 0.485);
+    --breath40: rgba(244, 102, 27, 0.480);
+    --breath50: rgba(244, 102, 27, 0.475);
+    --breath60: rgba(244, 102, 27, 0.470);
+    --breath70: rgba(244, 102, 27, 0.465);
+    --breath80: rgba(244, 102, 27, 0.460);
+    --breath90: rgba(244, 102, 27, 0.455);
+    --breath100: rgba(244, 102, 27, 0.450);
+
 }

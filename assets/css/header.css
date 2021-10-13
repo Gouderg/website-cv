@@ -2,14 +2,31 @@
     margin: 0 0;
 }
 
+
+
 body {
     background: radial-gradient(50% 75% at 0% 0%, var(--primary-orange-fade), rgba(0, 0, 0, 0)), 
                 radial-gradient(50% 75% at 100% 100%, var(--primary-orange-fade), rgba(0, 0, 0, 0)), 
                 var(--primary-blue);
 
     background-repeat: no-repeat;
+    animation: breath 1s linear infinite alternate;
     min-height: 100vh;
 }
+
+@keyframes breath {
+    0% {background: radial-gradient(50% 75% at 0% 0%, var(--breath0), rgba(0, 0, 0, 0)), radial-gradient(50% 75% at 100% 100%, var(--breath0), rgba(0, 0, 0, 0)), var(--primary-blue);}
+    10% {background: radial-gradient(50% 75% at 0% 0%, var(--breath10), rgba(0, 0, 0, 0)), radial-gradient(50% 75% at 100% 100%, var(--breath10), rgba(0, 0, 0, 0)), var(--primary-blue);}
+    20% {background: radial-gradient(50% 75% at 0% 0%, var(--breath20), rgba(0, 0, 0, 0)), radial-gradient(50% 75% at 100% 100%, var(--breath20), rgba(0, 0, 0, 0)), var(--primary-blue);}
+    30% {background: radial-gradient(50% 75% at 0% 0%, var(--breath30), rgba(0, 0, 0, 0)), radial-gradient(50% 75% at 100% 100%, var(--breath30), rgba(0, 0, 0, 0)), var(--primary-blue);}
+    40% {background: radial-gradient(50% 75% at 0% 0%, var(--breath40), rgba(0, 0, 0, 0)), radial-gradient(50% 75% at 100% 100%, var(--breath40), rgba(0, 0, 0, 0)), var(--primary-blue);}
+    50% {background: radial-gradient(50% 75% at 0% 0%, var(--breath50), rgba(0, 0, 0, 0)), radial-gradient(50% 75% at 100% 100%, var(--breath50), rgba(0, 0, 0, 0)), var(--primary-blue);}
+    60% {background: radial-gradient(50% 75% at 0% 0%, var(--breath60), rgba(0, 0, 0, 0)), radial-gradient(50% 75% at 100% 100%, var(--breath60), rgba(0, 0, 0, 0)), var(--primary-blue);}
+    70% {background: radial-gradient(50% 75% at 0% 0%, var(--breath70), rgba(0, 0, 0, 0)), radial-gradient(50% 75% at 100% 100%, var(--breath70), rgba(0, 0, 0, 0)), var(--primary-blue);}
+    80% {background: radial-gradient(50% 75% at 0% 0%, var(--breath80), rgba(0, 0, 0, 0)), radial-gradient(50% 75% at 100% 100%, var(--breath80), rgba(0, 0, 0, 0)), var(--primary-blue);}
+    90% {background: radial-gradient(50% 75% at 0% 0%, var(--breath90), rgba(0, 0, 0, 0)), radial-gradient(50% 75% at 100% 100%, var(--breath90), rgba(0, 0, 0, 0)), var(--primary-blue);}
+    100% {background: radial-gradient(50% 75% at 0% 0%, var(--breath100), rgba(0, 0, 0, 0)), radial-gradient(50% 75% at 100% 100%, var(--breath100), rgba(0, 0, 0, 0)), var(--primary-blue);}
+}   
 
 header {
     display: flex;
@@ -37,7 +54,7 @@ main {
     max-width: 125px;
     height: auto;
     padding: 2%;
-    animation:spin 4s linear infinite;
+    animation:spin 8s linear infinite;
 }
 
 .logo-text {
@@ -47,7 +64,7 @@ main {
 }
 
 @keyframes spin { 
-    100% { transform:rotate(360deg); 
+    100% { transform:rotate(-360deg); 
     } 
 }
 
