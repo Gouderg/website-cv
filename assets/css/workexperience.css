@@ -11,13 +11,15 @@ main {
     position: relative;
     z-index: 1;
     border: 1px solid pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .arrow {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
 }    
 
 .arrow-corpse {
@@ -98,9 +100,7 @@ main {
         font-size: 36px;
     }
 
-    .arrow { align-items: flex-end; }
-    .arrow-corpse{ margin-right: 6%; }
-    .arrow-head { margin-right: 5%; }
+    .big-arrow { justify-content: flex-end;}
 
 
     .card { 
@@ -108,7 +108,6 @@ main {
         width: 97%;
     }
     .left, .right{ margin: 6% 0% 0% 0%; }
-    /* .right { flex-direction: row-reverse;} */
 
 
 }
