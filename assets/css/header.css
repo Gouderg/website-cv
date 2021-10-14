@@ -113,32 +113,6 @@ main {
 .active {
     color: var(--secondary-blue);
 }
-/* .box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 70%;
-    max-width: 75%;
-    border: 2px solid var(--primary-orange);
-    border-radius: 10px;
-    text-align: center;
-}
-
-.box img {
-    max-width: 45px;
-}
-.call-text{
-    color: white;
-    font-family: 'Poppins-ExtraBold';
-    font-size: 1.1em;
-    margin: 20px 0;
-}
-
-.call-icon {
-    font-size: 2em;
-    margin: 12px 0;
-    color: white;
-} */
 
 /* Responsive */
 header .menu-burger {

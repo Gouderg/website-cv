@@ -149,3 +149,23 @@ De plus, j'ai réalisé des projets professionnels pour la junior entreprise de 
 
 Curious by nature, I am constantly looking for ways to improve myself, especially with personal projects on different themes and languages.
 Moreover, I have carried out professional projects for the junior company of my school. This allowed me to confront myself with the expectations of clients.
+
+
+#### Projets
+
+
+##### 1 - JosephIA
+##### 2 - LearnStation
+##### 3 - JosephSlave
+##### 4 - DynamicSimulation
+##### 5 - BrocolliGenerator
+##### 6 - Jeu de la vie
+##### 7 - Oxymètre de pouls
+##### 8 - Simulation de fractal
+##### 9 - Advent of code soluce
+
+
+# Amélioration mineur pour la fin
+
+Refaire setup organisation
+Ajouter des effets sur la timeline

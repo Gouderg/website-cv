@@ -30,8 +30,8 @@ main {
 .pp {
     width: 50%;
     height: auto;
-    border: 1px solid var(--primary-blue);
-    border-radius: 20% 20% 0% 0%;
+    border: 2px solid var(--secondary-blue);
+    border-radius: 2%;
 }
 
 .presentation-left-pres {
@@ -182,14 +182,14 @@ main {
     margin-top: 5%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
 }
 
 h3 {
     font-family: 'Raleway-Bold';
     font-size: 0.3em;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .skills-img {
@@ -215,9 +215,9 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: baseline;
     font-family: 'Raleway-Bold';
     font-size: 0.4em;
-    
 }
 
 .website-container a {text-decoration: none;}
@@ -226,8 +226,13 @@ figure {
     text-align: center;
     color: white;
 }
+
+figure:hover {
+    scale: 1.1;
+}
+
 .website-container-img {
-    width: 150px;
+    width: 125px;
     height: auto;
 }
 
