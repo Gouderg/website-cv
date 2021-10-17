@@ -151,28 +151,6 @@ Curious by nature, I am constantly looking for ways to improve myself, especiall
 Moreover, I have carried out professional projects for the junior company of my school. This allowed me to confront myself with the expectations of clients.
 
 
-#### Projets
-
-
-##### 1 - JosephIA
-
-##### 2 - Advent of code
-
-##### 3 - app-Brocoli
-
-##### 4 - JosephSlave
-
-##### 5 - DynamicSimulation
-
-##### 6 - Boids
-
-##### 7 - LearnStation
-
-##### 8 - Jeu de la vie
-
-##### 9 - Oxymètre de pouls
-
-##### 10 - Simulation de fractal
 
 
 
