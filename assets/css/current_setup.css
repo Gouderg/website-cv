@@ -1,6 +1,6 @@
 
 main {
-    font-size: 56px;
+    font-size: 50px;
 }
 
 
@@ -20,28 +20,34 @@ main {
 
 .setup {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 5%;
-    
+    border-radius: 10px;
+    background-color: #3f3f3f5F;
 }
 
 .setup1,
 .setup2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.setup2 {
-    margin-top: 3%;
-}
-
-.container {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 3%;
+}
+
 .li-setup img {
-    width: 32px;
+    width: 18px;
     height: auto;
 }
+
+@media screen and (max-width: 800px) {
+    .setup {
+        flex-wrap: wrap;
+    }
+}   

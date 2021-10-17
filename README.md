@@ -155,14 +155,26 @@ Moreover, I have carried out professional projects for the junior company of my 
 
 
 ##### 1 - JosephIA
-##### 2 - LearnStation
-##### 3 - JosephSlave
-##### 4 - DynamicSimulation
-##### 5 - BrocolliGenerator
-##### 6 - Jeu de la vie
-##### 7 - Oxymètre de pouls
-##### 8 - Simulation de fractal
-##### 9 - Advent of code soluce
+
+##### 2 - Advent of code
+
+##### 3 - app-Brocoli
+
+##### 4 - JosephSlave
+
+##### 5 - DynamicSimulation
+
+##### 6 - Boids
+
+##### 7 - LearnStation
+
+##### 8 - Jeu de la vie
+
+##### 9 - Oxymètre de pouls
+
+##### 10 - Simulation de fractal
+
+
 
 
 # Amélioration mineur pour la fin
