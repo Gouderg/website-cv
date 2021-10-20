@@ -254,6 +254,9 @@ figure:hover {
         width: 75px;
         height: auto;
     }
+    
+    .skills-container { flex-wrap: wrap; }
+    .skills-container > div { margin: 10px; }
 
     .skills-img > img {
         width: 50px;
