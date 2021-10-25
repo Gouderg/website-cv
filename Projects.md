@@ -10,7 +10,7 @@ Technologies utilisés: Python
 
 #### Description
 
-JosephIA est une petite intelligence artificielle qui joue contre un utilisateur au puissance 4 et au tictactoe. Il peut aussi resoudre un sudoku.
+JosephIA est une petite intelligence artificielle qui joue contre un utilisateur au puissance 4 et au tictactoe. Il peut aussi résoudre un sudoku.
 
 JosephIA is a small artificial intelligence that plays with a user at power 4 and tictactoe. It can also solve a sudoku.
 
@@ -20,13 +20,13 @@ JosephIA is a small artificial intelligence that plays with a user at power 4 an
 JosephIA est basée sur l'algorithme minimax optimisée avec un élagage alpha-bêta.
 L'algorithme Minimax calcule la décision optimale à un état actuel et essaie de trouver le mouvement optimal pour un joueur, en supposant que votre adversaire joue également de manière optimale. Il utilise une méthode de type backtracking, en faisant un simple appel récursif qui développe toutes les feuilles de l'arbre, en poussant ces valeurs vers le haut niveau par niveau. Minimax explore l'arbre (DFS Depth First Search).
 (photo)
-1956, John McCarthy préside la conférence de Dartmouth, dans laquelle il présente l'élagage l'alpha-bêta , qui cherche à diminuer le nombre de nœuds évalués par l'algorithme minimax dans son arbre de recherche. Il arrête d'évaluer un coup lorsqu'il a trouvé au moins une possibilité qui prouve que le coup est pire qu'un coup examiné précédemment. Lorsqu'il est appliqué à un arbre minimax standard, il renvoie le même coup que minimax, mais élimine les branches qui ne peuvent pas influencer la décision finale.
+En 1956, John McCarthy préside la conférence de Dartmouth, dans laquelle il présente l'élagage l'alpha-bêta , qui cherche à diminuer le nombre de nœuds évalués par l'algorithme minimax dans son arbre de recherche. Il arrête d'évaluer un coup lorsqu'il a trouvé au moins une possibilité qui prouve que le coup est pire qu'un coup examiné précédemment. Lorsqu'il est appliqué à un arbre minimax standard, il renvoie le même coup que minimax, mais élimine les branches qui ne peuvent pas influencer la décision finale.
 (photo)
 
 JosephIA is based on the minimax algorithm optimized with alpha-beta pruning.
 Minimax algorithm calculate the minimax decision at a current state and try to find the optimal move for a player, assuming that your opponent also plays optimally. It use a backtracking-like method, doing a simple recursive call developping all leaf of the tree, pushing up these values level by level. Minimax explore (DFS Depth First Search) the tree
 
-1956, John McCarthy is presiding Dartmouth's conference, in which he presents alpha-beta prunning, that seeks to decrease the number of nodes that are evaluated by the minimax algorithm in its search tree. It stops evaluating a move when at least one possibility has been found that proves the move to be worse than a previously examined move. When applied to a standard minimax tree, it returns the same move as minimax would, but prunes away branches that cannot possibly influence the final decision.
+In 1956, John McCarthy is presiding Dartmouth's conference, in which he presents alpha-beta prunning, that seeks to decrease the number of nodes that are evaluated by the minimax algorithm in its search tree. It stops evaluating a move when at least one possibility has been found that proves the move to be worse than a previously examined move. When applied to a standard minimax tree, it returns the same move as minimax would, but prunes away branches that cannot possibly influence the final decision.
 
 
 #### How to use - Comment l'utiliser 

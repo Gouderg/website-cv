@@ -159,3 +159,16 @@ Moreover, I have carried out professional projects for the junior company of my 
 
 Refaire setup organisation
 Ajouter des effets sur la timeline
+
+
+# Gestion du JSON
+
+    * photo: ajouter une mianiature.jpeg pour la mise en place
+    *        si il ya des chiffes les rajouter a la place d'un
+
+    Mettre le texte dans un .txt si ya des liens vers des photos remplacer et reinjecter.
+
+    ./projects/nom/ =>  /text/how_work.txt
+                        /text/how_use.txt
+                        /img/miniature.jpeg
+                        /img/*

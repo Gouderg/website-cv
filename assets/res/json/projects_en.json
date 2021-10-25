@@ -1,0 +1,14 @@
+{
+    "0": {
+        "name": "JosephIA", 
+        "tech": "Python",
+        "years": "April 2020",
+        "context": "Personnal Project",
+        "participant": 1,
+        "description": "JosephIA is a small artificial intelligence that plays with a user at power 4 and tictactoe. It can also solve a sudoku.",
+        "more_information": "./assets/res/projects/josephIA/"
+    },
+
+    
+
+}

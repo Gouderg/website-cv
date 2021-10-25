@@ -1,0 +1,32 @@
+{
+    "0": {
+        "name": "JosephIA", 
+        "tech": "Python",
+        "years": "Avril 2020",
+        "context": "Projet Personnel",
+        "participant": 1,
+        "description": "JosephIA est une petite intelligence artificielle qui joue contre un utilisateur au puissance 4 et au tictactoe. Il peut aussi résoudre un sudoku.",
+        "more_information": "./assets/res/projects/josephIA/"
+    },
+
+    "1": {
+        "name": "Advent of Code",
+        "tech": "Python",
+        "years": "Décembre 2020 - Aujourd'hui",
+        "context": "Projet Personnel",
+        "participant": 1,
+        "description": "",
+        "more_information": "./assets/res/projects/josephIA/"
+
+    },
+
+    "2": {
+        "name": "", 
+        "tech": "",
+        "years": "",
+        "context": "",
+        "participant": 1,
+        "description": "",
+        "more_information": "./assets/res/projects/josephIA/"
+    }
+}
