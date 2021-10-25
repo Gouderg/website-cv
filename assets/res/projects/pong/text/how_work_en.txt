@@ -1,0 +1,16 @@
+Use: The game ends when one of the players reaches 5 points.
+ Left paddle:
+<ul>
+    <li>'z' raises the left paddle</li>
+    <li>'x' moves the left paddle down</li>
+<ul>
+Right paddle:
+<ul>
+    <li>'i' raises the right paddle</li>
+    <li>'n' moves the right paddle down</li>
+<ul>
+Other commands:
+<ul>
+    <li>'ECHAP' to exit the game</li>
+    <li>'SPACE' pauses the game</li>
+<ul>

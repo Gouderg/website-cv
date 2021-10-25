@@ -1,0 +1,6 @@
+The basic flocking model consists of three simple steering behaviors which describe how an individual boid maneuvers based on the positions and velocities its nearby flockmates.
+<ul>
+    <li> separation: steer to avoid crowding local flockmates. </li>
+    <li> alignment: steer towards the average heading of local flockmates. </li>
+    <li> cohesion: steer to move towards the average position (center of mass) of local flockmates. </li>
+</ul>

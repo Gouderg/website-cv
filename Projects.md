@@ -207,8 +207,7 @@ Technologies utilisés: C++
 DynamicSimulation est un projet personnel utilise pour mettre en application les cours de physique. Le but n'était pas de faire de simples pendules, mais de recréer la gravité.
 Ici, nous avons un simple pendule qui oscille avec dans le temps, sans aucune friction. Après nous avons 2 doubles pendules. Un double pendule est dit chaotique, car il est très sensible aux conditions initiales. Pour mettre en exemple, les 2 pendules commencent la simulation avec 1 dégrée de différence, c'est presque imperceptible a l'œil, mais au bout de 30 secondes de simulation, ils commencent à se séparer l'un de l'autre pour au final avoir une oscillation complètement différente.
 
-DynamicSimulation is a personal project used to apply physics lessons. The goal was not to make simple pendulums, but to recreate gravity.
-Here we have a simple pendulum that swings with time, without any friction. Then we have two double pendulums. A double pendulum is defined as chaotic, because it is very sensitive to initial conditions. To give an example, the two pendulums start the simulation with 1 degree of difference, it's almost imperceptible to the eye, but after 30 seconds of simulation, they start to separate from each other to finally have a completely different oscillation.
+DynamicSimulation is a personal project used to apply physics lessons. The goal was not to make simple pendulums, but to recreate gravity. Here we have a simple pendulum that swings with time, without any friction. Then we have two double pendulums. A double pendulum is defined as chaotic, because it is very sensitive to initial conditions. To give an example, the two pendulums start the simulation with 1 degree of difference, it's almost imperceptible to the eye, but after 30 seconds of simulation, they start to separate from each other to finally have a completely different oscillation.
 
 
 #### How does it work
@@ -281,11 +280,9 @@ Technologies utilisés: Framework Symfony
 
 #### Description
     
-    Learnstation est un projet réalisé avec 4 amis. Le but de ce projet était de réaliser un site qui référence les bootcamps axé sur la programmation. 
-    Le site est accessible à cette adresse:  http://178.128.161.255:8000
+    Learnstation est un projet réalisé avec 4 amis. Le but de ce projet était de réaliser un site qui référence les bootcamps axé sur la programmation. Le site est accessible à cette adresse:  http://178.128.161.255:8000
 
-    Learnstation is a project realized with 4 friends. The goal of this project was to create a website that references bootcamps focused on programming. 
-    The site can be found at this address: http://178.128.161.255:8000
+    Learnstation is a project realized with 4 friends. The goal of this project was to create a website that references bootcamps focused on programming. The site can be found at this address: http://178.128.161.255:8000
 
 #### How does it work
 
@@ -467,16 +464,16 @@ Technologies utilisés: C++
     Use: The game ends when one of the players reaches 5 points.
 
     Left paddle:
-        - z' raises the left paddle
-        - x' moves the left paddle down
+        - 'z' raises the left paddle
+        - 'x' moves the left paddle down
 
     Right paddle:
         - 'i' raises the right paddle
-        - n' moves the right paddle down
+        - 'n' moves the right paddle down
 
     Other commands:
-        -ECHAP' to exit the game
-        - SPACE' pauses the game
+        - 'ECHAP' to exit the game
+        -  'SPACE' pauses the game
 
 #### How to use
 
@@ -563,7 +560,6 @@ Et ensuite il faut compiler le code avec la commande:
     ```bash
         ./Robot.exe
     ```
-
 To use this program, you need:
 - SDL1.2, SDL1.2-mixer, SDL1.2-image
 - C
@@ -578,6 +574,7 @@ Finally, we run the code with the command:
 ```bash
 ./Robot.exe
 ```
+
 
 
 ## 13 - Pressurized octopus

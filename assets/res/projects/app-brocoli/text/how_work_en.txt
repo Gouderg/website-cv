@@ -1,0 +1,7 @@
+The site is divided into 4 parts:
+<ul>
+    <li>The home page asks for the number of rows to be generated, the name of the table and the name of the model. Then, you choose the number of field types you want.</li>
+    <li>The data generation page allows you to fill in the previously selected fields. You can choose which type of file you want and you can save the model for future use. First, you generate the data with the generate button, a preview of the generated data appears in the console below. Then you can download the file or not.</li>
+    <li>The replay page allows you to regenerate a saved model and either change the types or change the fields.</li>
+    <li>The back page allows you to activate or deactivate a field type.</li>
+</ul>

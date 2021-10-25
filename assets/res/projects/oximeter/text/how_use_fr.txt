@@ -1,0 +1,2 @@
+Pour utiliser le port USB, il faut la librairie ft2xx.h, mais elle ne fonctionne que sous Windows.
+Pour tester juste avec un fichier d'entrée, il faut utiliser record_bin.dat.

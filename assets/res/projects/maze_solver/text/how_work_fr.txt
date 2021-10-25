@@ -1,0 +1,5 @@
+La première difficulté du projet a été de générer la carte ainsi que le robot avant d'implémenter l'algorithme du robot. Ensuite, j'ai commencé à réfléchir a comment le robot va sortir du labyrinthe.
+Si la sortie est sur un mur, on peut utiliser la technique de la main droite qui consiste a longer le mur en le gardant à sa droite.
+Mais pour trouver une sortie qui se situe au milieu d'une salle, il faut pouvoir parcourir la salle et le meilleur moyen est d'utiliser un algorithme de backtracking.
+Malheureusement, le concept de récursion était peut-être un peu trop poussé pour moi à ce moment-là et bien que j'y ai passé la moitie de mon projet, je n'ai pas pu l'implémenter proprement.
+Ensuite, nous devions utiliser la SDL pour rendre plus joli le programme.

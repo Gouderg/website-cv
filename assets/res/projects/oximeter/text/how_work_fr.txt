@@ -1,0 +1,13 @@
+Dans un premier temps, il faut récupérer une trame de 21 bits valide et tant que nous n'avons pas une trame valide, on continue de récupérer la trame.
+Après avoir récupéré la trame, nous avons 4 valeurs:
+<ul>
+    <li> AC R : la variation crête à crête de la lumière rouge mesurée. (onde de pouls) </li>
+    <li> DC R : la valeur moyenne de la lumière rouge mesurée. (tissus) </li>
+    <li> AC IR : la variation crête à crête de la lumière infrarouge mesurée. (onde de pouls) </li>
+    <li> DC IR : la valeur moyenne de la lumière infrarouge mesurée. (tissus) </li>
+</ul>
+
+Ensuite, on applique un filtre a réponse finie (FIR) qui va venir filtrer les composantes hautes fréquences des signaux et garder les fréquences autour d'1 kHz.
+Après filtrage FIR, les composantes AC résultantes sont ensuite traitées au moyen d’un filtre à réponse infinie (IIR). Ce filtre sert à supprimer la composante continue résultante.
+
+Enfin, on calcule le SP02 et le rythme cardiaque.

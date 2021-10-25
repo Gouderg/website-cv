@@ -1,0 +1,4 @@
+To use this program, you need SDL1.2, SDL1.2-mixer, SDL1.2-image and C.
+For ubuntu, these packages are: libsdl1.2debian libsdl1.2-dev, libsdl-mixer1.2, libsdl-mixer1.2-dev, libsdl-image1.2, libsdl-image1.2-dev
+And then compile the code with the command: <span class="code">make</span>
+Finally, we run the code with the command: <span class="code">./Robot.exe</span>

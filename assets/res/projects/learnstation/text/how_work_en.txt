@@ -1,0 +1,6 @@
+The site is divided into 3 parts:
+<ul>
+    <li> Static pages that present the different areas related to bootcamps. </li>
+    <li> A form which, according to the place, the domain and the availability of the user, will propose him the nearest and most adapted bootcamps to his request. </li>
+    <li> A blog that lists different articles according to category. The site administrator has the possibility to add articles with a special url. </li>
+</ul>
