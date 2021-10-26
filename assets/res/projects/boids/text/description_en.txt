@@ -1,0 +1,1 @@
+In 1986, Craig Reynolds made a computer model of coordinated animal motion such as bird flocks and fish schools.

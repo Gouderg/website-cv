@@ -1,0 +1,1 @@
+During our second year at ISEN, and in particular during the C++ course, we coded the game of Pong.

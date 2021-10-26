@@ -1,0 +1,1 @@
+En 1986, Craig Reynolds a réalisé un modèle informatique du mouvement coordonné d'animaux tels que les volées d'oiseaux et les bancs de poissons.

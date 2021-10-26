@@ -1,0 +1,1 @@
+The game of life is a simulation of cells that, according to 2 rules, will live or die. In my case, this small project allowed me to better understand the use of arrays and gave me a better code reflection.

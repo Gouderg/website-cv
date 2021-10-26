@@ -1,0 +1,1 @@
+Dans le cadre de notre troisième année l'ISEN, nous avons dû réaliser un oxymètre de pouls. Le but de ce projet est de récupérer une trame de 21 bits envoyés par liaison USB et ensuite calculer le rythme cardiaque ainsi que le taux d'oxygène dans le sang.

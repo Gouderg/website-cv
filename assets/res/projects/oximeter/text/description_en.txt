@@ -1,0 +1,1 @@
+As part of our third year at ISEN, we had to create a pulse oximeter. The aim of this project is to recover a 21-bit frame sent by USB link and then calculate the heart rate and the oxygen level in the blood.

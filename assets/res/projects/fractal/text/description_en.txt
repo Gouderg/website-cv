@@ -1,0 +1,1 @@
+This fractal simulation is a small project to apply a passage from Daniel Shiffman's book 'The nature of code' where he explains the Koch Curve.

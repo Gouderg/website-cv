@@ -1,0 +1,1 @@
+As part of our first year at ISEN, and in particular the C course, we coded a small robot that must find the exit in a closed space in a minimum of moves.

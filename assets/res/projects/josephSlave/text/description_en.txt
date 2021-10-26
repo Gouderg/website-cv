@@ -1,0 +1,1 @@
+JosephSlave is a discord bot that executes different commands. It was created because I was curious about how a discord bot worked and if it was easy to make one.

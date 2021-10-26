@@ -1,0 +1,1 @@
+Le jeu de la vie est une simulation de cellules qui en fonction de 2 règles vont vivre ou mourir. Dans mon cas, ce petit projet m'a permis de mieux comprendre l'utilisation des tableaux et m'a apporté une meilleure réflexion de code.
