@@ -5,8 +5,8 @@
         "years": ["Avril 2020", "April 2020"],
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
-        "more_information": "./assets/res/projects/josephIA/",
-        "tag": ["software", "top-6"]
+        "more_information": "../assets/res/projects/josephIA/",
+        "tag": ["Software", "Top-6"]
     },
 
     "1": {
@@ -15,8 +15,8 @@
         "years": ["Décembre 2020 - Aujourd'hui", "December 2020 - Now"],
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
-        "more_information": "./assets/res/projects/aoc/",
-        "tag": ["software", "top-6"]
+        "more_information": "../assets/res/projects/aoc/",
+        "tag": ["Software", "Top-6"]
     },
 
     "2": {
@@ -25,8 +25,8 @@
         "years": ["Mai 2020", "May 2020"],
         "context": ["Projet scolaire - CIR2", "School Project - CIR2"],
         "participant": 2,
-        "more_information": "./assets/res/projects/app-brocoli/",
-        "tag": ["web", "top-6"]
+        "more_information": "../assets/res/projects/app-brocoli/",
+        "tag": ["Web", "Top-6"]
     },
 
     "3": {
@@ -35,8 +35,8 @@
         "years": ["Mars 2020", "March 2020"],
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
-        "more_information": "./assets/res/projects/josephSlave/",
-        "tag": ["software"]
+        "more_information": "../assets/res/projects/josephSlave/",
+        "tag": ["Software"]
     },
 
     "4": {
@@ -45,8 +45,8 @@
         "years": ["Juin 2021", "June 2021"],
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
-        "more_information": "./assets/res/projects/dynamic_simulation/",
-        "tag": ["software"]
+        "more_information": "../assets/res/projects/dynamic_simulation/",
+        "tag": ["Software"]
     },
 
     "5": {
@@ -55,8 +55,8 @@
         "years": ["Juillet 2020", "July 2020"],
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
-        "more_information": "./assets/res/projects/boids/",
-        "tag": ["software", "top-6"]
+        "more_information": "../assets/res/projects/boids/",
+        "tag": ["Software", "Top-6"]
     },
 
     "6": {
@@ -65,8 +65,8 @@
         "years": ["Septembre 2020", "September 2020"],
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 4,
-        "more_information": "./assets/res/projects/learnstation/",
-        "tag": ["web"]
+        "more_information": "../assets/res/projects/learnstation/",
+        "tag": ["Web"]
     },
 
     "7": {
@@ -75,8 +75,8 @@
         "years": ["Mars 2020", "March 2020"],
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
-        "more_information": "./assets/res/projects/jeudelavie/",
-        "tag": ["software"]
+        "more_information": "../assets/res/projects/jeudelavie/",
+        "tag": ["Software"]
     },
 
     "8": {
@@ -85,8 +85,8 @@
         "years": ["Avril 2021", "April 2021"],
         "context": ["Projet Scolaire - A3","School Project - A3"],
         "participant": 1,
-        "more_information": "./assets/res/projects/oximeter/",
-        "tag": ["software"]
+        "more_information": "../assets/res/projects/oximeter/",
+        "tag": ["Software"]
     },
 
     "9": {
@@ -95,8 +95,8 @@
         "years": ["Juillet 2020", "July 2020"],
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
-        "more_information": "./assets/res/projects/fractal/",
-        "tag": ["software"]
+        "more_information": "../assets/res/projects/fractal/",
+        "tag": ["Software"]
     },
 
     "10": {
@@ -105,8 +105,8 @@
         "years": ["Mai 2020", "May 2020"],
         "context": ["Projet Scolaire - CIR2", "School Project - CIR2"],
         "participant": 1,
-        "more_information": "./assets/res/projects/pong/",
-        "tag": ["software"]
+        "more_information": "../assets/res/projects/pong/",
+        "tag": ["Software"]
     },
 
     "11": {
@@ -115,8 +115,8 @@
         "years": ["Juin 2019", "June 2019"],
         "context": ["Projet Scolaire - CIR 1", "School Project - CIR1"],
         "participant": 1,
-        "more_information": "./assets/res/projects/maze_solver/",
-        "tag": ["software"]
+        "more_information": "../assets/res/projects/maze_solver/",
+        "tag": ["Software"]
     },
 
     "12": {
@@ -125,7 +125,7 @@
         "years": ["Janvier 2021", "January 2021"],
         "context": ["Projet Scolaire - A3", "School Project - A3"],
         "participant": 1,
-        "more_information": "./assets/res/projects/learnstation/",
-        "tag": ["web"]
+        "more_information": "../assets/res/projects/learnstation/",
+        "tag": ["Web"]
     }
 }
