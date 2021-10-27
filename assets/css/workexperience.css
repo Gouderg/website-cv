@@ -56,7 +56,7 @@ main {
 }
 
 .card {
-    top: 100px;
+    top: 0px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -67,6 +67,7 @@ main {
 }
 
 .hide {
+    top: 100px;
     opacity: 0;
 }
 
