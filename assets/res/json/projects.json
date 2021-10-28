@@ -20,7 +20,7 @@
     },
 
     "2": {
-        "name": "app-Brocoli", 
+        "name": "App-Brocoli", 
         "tech": "PHP - HTML - Bootstrap - MySQL",
         "years": ["Mai 2020", "May 2020"],
         "context": ["Projet scolaire - CIR2", "School Project - CIR2"],
@@ -40,13 +40,13 @@
     },
 
     "4": {
-        "name": "DynamicSimulation", 
+        "name": "Dynamic Simulation", 
         "tech": "C++",
         "years": ["Juin 2021", "June 2021"],
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
         "path": "../assets/res/projects/dynamic_simulation/",
-        "tag": ["Software"]
+        "tag": ["Software", "Top-6"]
     },
 
     "5": {
@@ -121,11 +121,11 @@
 
     "12": {
         "name": "Pressurized octopus", 
-        "tech": "Framework React / Symfony",
+        "tech": "React / Symfony",
         "years": ["Janvier 2021", "January 2021"],
         "context": ["Projet Scolaire - A3", "School Project - A3"],
         "participant": 1,
         "path": "../assets/res/projects/pressurized_octopus/",
-        "tag": ["Web"]
+        "tag": ["Web", "Top-6"]
     }
 }
