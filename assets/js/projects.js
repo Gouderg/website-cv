@@ -26,12 +26,27 @@ function balise_choix(data) {
 // Fonction qui va ajouter chaque miniature de projet.
 function displaySmallProject(data) {
 
+    // On recupre la langue du navigateur.
+    var index = (navigator.language === 'en') ? 1 : 0;
+    var terminaison = ["_fr", "_en"];    
 
-    // Récupère la vignette de chaque élément
-    var img = document.createElement("img");
-    img.src = data["12"].path+'img/calcul.png';
-    img.classList.add("img-container");
-    document.getElementById("click").appendChild(img);
+    var projects = "";
+    for (const key in data) {
+        var div = '<div class="small-box">';
+        
+        // AJout titre
+        div += '<h3 class="small-box-title">'+data[key].name+'</h3>'
+        // Ajout Miniature
+        div += '<img class="small-box-img" src="'+data[key].path+'img/miniature.png'+'" alt="miniature">';
+        // Ajout date
+        div += '<div class="small-box-bottom"><h6 class="small-box-date">'+data[key].years[index]+'</h6>';
+        // Ajout Technologies
+        div += '<h6 class="small-box-techno">'+data[key].tech+'</h6></div></div>';
+
+        projects += div;
+    }
+
+    document.getElementById("list-project").innerHTML = projects;
 }
 
 // Fonction qui va afficher le grand projet.
@@ -43,7 +58,7 @@ function displayOneProject(data) {
 function meastro(data) {
     
     balise_choix(data);
-
+    displaySmallProject(data);
     
 }
 
