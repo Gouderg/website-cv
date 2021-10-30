@@ -1,6 +1,12 @@
 JosephIA est basée sur l'algorithme minimax optimisée avec un élagage alpha-bêta.
 L'algorithme Minimax calcule la décision optimale à un état actuel et essaie de trouver le mouvement optimal pour un joueur, en supposant que votre adversaire joue également de manière optimale. Il utilise une méthode de type backtracking, en faisant un simple appel récursif qui développe toutes les feuilles de l'arbre, en poussant ces valeurs vers le haut niveau par niveau. Minimax explore l'arbre (DFS Depth First Search).
+<br>
+<div class="png-container">
 <img src="./assets/res/projects/josephIA/img/minimax-explanation.png" class="png-explanation" />
-
+</div>
+<br>
 En 1956, John McCarthy préside la conférence de Dartmouth, dans laquelle il présente l'élagage l'alpha-bêta , qui cherche à diminuer le nombre de nœuds évalués par l'algorithme minimax dans son arbre de recherche. Il arrête d'évaluer un coup lorsqu'il a trouvé au moins une possibilité qui prouve que le coup est pire qu'un coup examiné précédemment. Lorsqu'il est appliqué à un arbre minimax standard, il renvoie le même coup que minimax, mais élimine les branches qui ne peuvent pas influencer la décision finale.
+<br>
+<div class="png-container">
 <img src="./assets/res/projects/josephIA/img/AB_pruning.png" class="png-explanation" />
+</div>

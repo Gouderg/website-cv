@@ -1,14 +1,17 @@
 Utilisation: Le jeu se termine quand l'un des joueurs atteint 5 points.
+<br><br>
 Palette gauche:
 <ul>
     <li>'z' permet de lever la palette gauche</li>
     <li>'x' permet de descendre la palette gauche</li>
 </ul>
+<br>
 Palette droite:
 <ul>
     <li>'i' permet de lever la palette droite</li>
     <li>'n' permet de descendre la palette droite</li>
 </ul>
+<br>
 Autres commandes:
 <ul>
     <li>'ECHAP' permet de quitter le jeu</li>

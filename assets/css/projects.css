@@ -156,7 +156,11 @@ main {
 .arrow-up {
     margin-bottom: 5%;
     text-align: center;
-    rotate: 180deg;
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+
 }
 
 .arrow-img:hover {
@@ -177,9 +181,128 @@ main {
 .big-project {
     display: none;
     flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
+    margin: 2%;
+    background-color: #c4c4c43b;
+    padding: 2%;
+    border-radius: 20px;
 }
 
+.title-project {
+    color: var(--primary-orange);
+    font-family: Poppins-ExtraBold;
+    font-size: 0.9em;
+    align-self: center;
+}
 
+.carac-pro {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 0.3em;
+    font-family: Poppins-Bold;
+    margin: 4% 0%;
+}
+
+.title-pro {
+    font-family: Poppins-Bold;
+    color: white;
+    font-size: 0.6em;
+}
+
+.firstLetter {
+    color: var(--primary-orange);
+}
+
+table, th, td {
+    padding: 10px;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.text-pro {
+    font-family: Raleway-Medium;
+    font-size: 0.3em;
+    color: white;
+    margin-left: 4%;
+}
+
+.desc-pro, .work-pro, .use-pro {
+    margin: 2% 0%;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: Poppins-Bold;
+}
+
+.code {
+    background-color: var(--primary-blue);
+    color: var(--primary-orange);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px
+}
+.png-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.png-explanation {
+    width: 50%;
+    height: auto;
+    margin: 3% 0%;
+}
+
+.carrousel {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    justify-content: center;
+    margin: 3%;
+}
+
+.carrousel-arrow {
+    align-self: center;
+    width: 4%;
+    margin: 10px;
+}
+
+.carrousel-arrow:hover {
+    cursor: pointer;
+}
+
+.carrousel-block-png {
+    min-width: 25%;
+    /* border: 1px solid black; */
+}
+.carrousel-png {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        font-size: 48px;
+    }
+
+    .carac-pro {
+        flex-direction: column;
+    }
+
+    .carrousel-arrow {
+        width: 50px;
+        height: auto;
+    }
+
+    .carrousel-png {
+        border-radius: 5px;
+    }
+    .code {
+        padding: 1px;
+    }
+}
 

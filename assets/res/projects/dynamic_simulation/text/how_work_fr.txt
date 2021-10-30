@@ -1,4 +1,7 @@
 En physique, le pendule simple est une masse ponctuelle fixée à l'extrémité d'un fil sans masse et inextensible, et oscillant sous l'effet de la pesanteur. Il s'agit du modèle de pendule pesant le plus simple. Il est parfois appelé pendule de gravité idéal et, par opposition, tout pendule de gravité réel est appelé pendule pesant composé. Par extension, on appelle aussi parfois pendule simple un dispositif dans lequel le fil inextensible est remplacé par une tige rigide de masse nulle pouvant tourner sans frottement dans un plan vertical autour de son extrémité fixe (liaison parfaite).
 En mécanique, on désigne par pendule double un pendule à l'extrémité duquel on accroche un autre pendule. Son évolution est généralement chaotique. La théorie du chaos en elle-même correspond à l'étude des comportements des systèmes dynamiques, particulièrement sensibles aux conditions initiales qui leur sont imposées.
 L'équation d'accélération du double pendule est un petit peu plus longue:
-<img src="./assets/res/projects/dynamic_simulation/img/equation.png" class="png-explanation" />
+<br>
+<div class="png-container">
+    <img src="../assets/res/projects/dynamic_simulation/img/equation.png" class="png-explanation" />
+</div>

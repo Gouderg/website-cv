@@ -6,12 +6,12 @@ Le site s'est décomposé en plusieurs étapes:
     <li>Création de l'interface utilisateur avec React</li>
     <li>Création de la partie administrateur qui peut gérer les bases de donnes avec Symfony</li>
 </ul>
-
+<br>
 L'interface utilisateur a 2 pages :
 <ul>
     <li>La première permet en fonction de certaines données de calculer des paliers de décompression ainsi que d'autre données relatives a la plongée</li>
     <li>La deuxième permet de regarder les paliers de la table de décompression de MN90 ou Bullman.</li>
 </ul>
-
+<br>
 Le site web se compose aussi avec une interface admin. Cependant, il faut se connecter sur une URL differente car la partie admin est sur le serveur symfony.
 Il y a une page de login nécessitant un user et un password. Le cote admin permet d'ajouter / modifier /supprimer dans la base de données.

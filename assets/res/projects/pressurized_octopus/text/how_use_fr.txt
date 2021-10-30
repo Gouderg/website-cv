@@ -1,18 +1,20 @@
 <h2>Mise en place du front</h2>
 <p>Il faut se placer dans le répertoire front/ et faire un <span class="code">npm i</span>.
     Ensuite, on peut changer l'url de l'API dans le fichier src/Components/global.js.
-</p> 
+</p>
+<br>
 <h2>Installer la base de données</h2>
 <p>Il faut tout d'abord ouvrir la console de mysql et faire un <span class="code">source config/generate_database/bdd.sql</span></p>
-
-<p> Ensuite, il faut se rendre à la racine du projet et faire un <span class="code">bin:console doctrine:migrations:migrate</span></p>
+<br>
+<p> Ensuite, il faut se rendre à la racine du projet et faire un <span class="code">bin/console doctrine:migrations:migrate</span></p>
+<br>
 <p>Enfin, il faut retourner dans la console mysql et taper la commande <span class="code">source config/generate_database/insertData.sql</span></p>
-
+<br>
 <h2>Login</h2>
 <p>Les logins pour accéder au crud sont: username => admin et password => supermotdepasse</p>
-
+<br>
 <h2>URL</h2>
-
+<br>
 <h4>CRUD</h4>
     <table>
         <thead>
@@ -76,7 +78,7 @@
         </tr>
         </tbody>
     </table>
-
+    <br>
     <h4>API</h4>
     <p>Utilisation avec une méthode <strong>GET</strong></p>
     <table>
@@ -97,7 +99,7 @@
         </tr>
     </tbody>
 </table>
-
+<br>
 <h4>Fronts</h4>
 <table>
     <thead>

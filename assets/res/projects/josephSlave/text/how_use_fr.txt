@@ -2,13 +2,13 @@ Pour pouvoir utiliser le bot, il faut installer les différents paquets: npm, cu
 Avec npm, il faut installer les paquets suivants: discord.js, node-opus, youtube-audio-stream, xmlhttprequest
 
 Ensuite, il faut créer un fichier config.json avec la structure suivante:
-
+<br>
 {
-"token" : "insert_token",
-	"cleNasa" : "insert_token",
-	"cleOpenWeather" : "insert_token",
-	"cleJoke" : "insert_token"
-}
-
+<br>	"token" : "insert_token",
+<br>	"cleNasa" : "insert_token",
+<br>	"cleOpenWeather" : "insert_token",
+<br>	"cleJoke" : "insert_token"
+<br>}
+<br>
 Enfin, il faut lancer le bot avec la commande suivante:
 <span class="code">node index.js</span>

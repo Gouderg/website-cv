@@ -3,12 +3,12 @@ With npm, you have to install the following packages: discord.js, node-opus, you
 
 Then you have to create a config.json file with the following structure:
 
-{
-"token" : "insert_token",
-	"cleNasa" : "insert_token",
-	"cleOpenWeather" : "insert_token",
-	"cleJoke" : "insert_token"
-}
-
+<br>{
+<br>	"token" : "insert_token",
+<br>	"cleNasa" : "insert_token",
+<br>	"cleOpenWeather" : "insert_token",
+<br>	"cleJoke" : "insert_token"
+<br>}
+<br>
 Finally, we need to launch the bot with the following command:
 <span class="code">node index.js</span>

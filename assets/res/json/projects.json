@@ -6,7 +6,8 @@
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
         "path": "../assets/res/projects/josephIA/",
-        "tag": ["Software", "Top-6"]
+        "tag": ["Software", "Top-6"],
+        "nb_photo": 4
     },
 
     "1": {
@@ -16,7 +17,8 @@
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
         "path": "../assets/res/projects/aoc/",
-        "tag": ["Software", "Top-6"]
+        "tag": ["Software", "Top-6"],
+        "nb_photo": 3
     },
 
     "2": {
@@ -26,7 +28,8 @@
         "context": ["Projet scolaire - CIR2", "School Project - CIR2"],
         "participant": 2,
         "path": "../assets/res/projects/app-brocoli/",
-        "tag": ["Web", "Top-6"]
+        "tag": ["Web", "Top-6"],
+        "nb_photo": 6
     },
 
     "3": {
@@ -36,37 +39,41 @@
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
         "path": "../assets/res/projects/josephSlave/",
-        "tag": ["Software"]
+        "tag": ["Software"],
+        "nb_photo": 6
     },
 
     "4": {
         "name": "Dynamic Simulation", 
-        "tech": "C++",
+        "tech": "C++ - SFML",
         "years": ["Juin 2021", "June 2021"],
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
         "path": "../assets/res/projects/dynamic_simulation/",
-        "tag": ["Software", "Top-6"]
+        "tag": ["Software", "Top-6"],
+        "nb_photo": 4
     },
 
     "5": {
         "name": "Boids", 
-        "tech": "C++",
+        "tech": "C++ - SFML",
         "years": ["Juillet 2020", "July 2020"],
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
         "path": "../assets/res/projects/boids/",
-        "tag": ["Software", "Top-6"]
+        "tag": ["Software"],
+        "nb_photo": 3
     },
 
     "6": {
         "name": "LearnStation", 
-        "tech": "Framework Symfony",
+        "tech": "Symfony",
         "years": ["Septembre 2020", "September 2020"],
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 4,
         "path": "../assets/res/projects/learnstation/",
-        "tag": ["Web"]
+        "tag": ["Web"],
+        "nb_photo": 6
     },
 
     "7": {
@@ -76,7 +83,8 @@
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
         "path": "../assets/res/projects/jeudelavie/",
-        "tag": ["Software"]
+        "tag": ["Software", "Top-6"],
+        "nb_photo": 6
     },
 
     "8": {
@@ -86,7 +94,8 @@
         "context": ["Projet Scolaire - A3","School Project - A3"],
         "participant": 1,
         "path": "../assets/res/projects/oximeter/",
-        "tag": ["Software"]
+        "tag": ["Software"],
+        "nb_photo": 0
     },
 
     "9": {
@@ -96,7 +105,8 @@
         "context": ["Projet Personnel", "Personnal Project"],
         "participant": 1,
         "path": "../assets/res/projects/fractal/",
-        "tag": ["Software"]
+        "tag": ["Software"],
+        "nb_photo": 7
     },
 
     "10": {
@@ -106,7 +116,8 @@
         "context": ["Projet Scolaire - CIR2", "School Project - CIR2"],
         "participant": 1,
         "path": "../assets/res/projects/pong/",
-        "tag": ["Software"]
+        "tag": ["Software"],
+        "nb_photo": 3
     },
 
     "11": {
@@ -116,7 +127,8 @@
         "context": ["Projet Scolaire - CIR 1", "School Project - CIR1"],
         "participant": 1,
         "path": "../assets/res/projects/maze_solver/",
-        "tag": ["Software"]
+        "tag": ["Software"],
+        "nb_photo": 4
     },
 
     "12": {
@@ -126,6 +138,7 @@
         "context": ["Projet Scolaire - A3", "School Project - A3"],
         "participant": 1,
         "path": "../assets/res/projects/pressurized_octopus/",
-        "tag": ["Web", "Top-6"]
+        "tag": ["Web", "Top-6"],
+        "nb_photo": 7
     }
 }

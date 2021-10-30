@@ -17,6 +17,7 @@
     <script type="text/javascript" src="../assets/js/header.js" defer></script>
     <script type="text/javascript" src="../assets/js/footer.js" defer></script>
     <script type="text/javascript" src="../assets/js/projects.js" defer></script>
+    <script type="text/javascript" src="../assets/js/carrousel.js" defer></script>
 
 
 </head>
@@ -77,29 +78,43 @@
 
         <section id="big-project" class="big-project">
             <!-- Titre du projet. -->
-            <h1 id="title-project" class="title-project"></h1>
+            <h1 id="title-project" class="title-project">Boids</h1>
+            
             <!-- Carrousel avec les photos lié au projet. -->
-            <div id="carrousel" class="carrousel">"</div>
+            <div id="carrousel" class="carrousel">
+                <img onclick="moveleft()" class="carrousel-arrow" src="../assets/res/img/project/Arrow-left.png" alt="left arrow">
+                <div id="carrousel-block-png" class="carrousel-block-png">
+                    <img id="img_0" class="carrousel-png" src="../assets/res/projects/boids/img/miniature.png" alt="miniature">
+                    <img id="img_1" class="carrousel-png" src="../assets/res/projects/boids/img/0.png" alt="miniature" hidden>
+                    <img id="img_2" class="carrousel-png" src="../assets/res/projects/boids/img/1.png" alt="miniature" hidden>
+                    <img id="img_3" class="carrousel-png" src="../assets/res/projects/boids/img/2.png" alt="miniature" hidden>
+                </div>
+                <img onclick="moveright()" class="carrousel-arrow" src="../assets/res/img/project/Arrow-right.png" alt="right arrow">
+            </div>
+            
             <!-- Caractéristiques du projet. -->
             <div id="carac-pro" class="carac-pro">
+                <div>Numbers of Participants: <span id="pers"></span></div>
+                <div>Date: <span id="years"></span></div>
+                <div>Context: <span id="type"></span></div>
+                <div>Technologies: <span id="tech"></span></div>
             </div>
 
             <!-- Description du projet. -->
-            <div id="desc-pro" class="desc-pro">
-                <h2 class="title-pro">Description</h2>
-                <p id="desc-pro-text"></p>
+            <div class="desc-pro">
+                <h2 class="title-pro"><span class="firstLetter">D</span>escription</h2>
+                <div id="desc-pro-text" class="text-pro"></div>
             </div>
             
             <!-- Comment marche le projet. -->
             <div class="work-pro">
-                <h2 class="title-pro">How it works</h2>
-                <p id="work-pro-text"></p>
+                <h2 class="title-pro"><span class="firstLetter">H</span>ow it works</h2>
+                <div id="work-pro-text" class="text-pro"></div>
             </div>
-            
             <!-- Comment utiliser le projet. -->
             <div class="use-pro">
-                <h2 class="title-pro">How to use</h2>
-                <p id="use-pro-text"></p>
+                <h2 class="title-pro"><span class="firstLetter">H</span>ow to use</h2>
+                <div id="use-pro-text" class="text-pro"></div>
             </div>
         </section>
 

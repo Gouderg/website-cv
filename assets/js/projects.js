@@ -24,9 +24,6 @@ function balise_choix(data) {
             color[tag] = palette[id];
             id += 1;
         }
-        
-
-
         selecteurs += '<h5 onclick="choices(\''+tag+'\')" class="tags">'+tag+'</h5>';
     });
     document.getElementById("selec-tag").innerHTML = selecteurs;
@@ -121,8 +118,8 @@ function backToTop() {
     window.scrollTo({
         top: -1,
         behavior: 'smooth'
-      });
-  }
+    });
+}
 
 // Fonction qui va afficher le grand projet.
 function displayOneProject(id) {
@@ -136,7 +133,27 @@ function displayOneProject(id) {
     fetch("../assets/res/json/projects.json")
         .then(response => response.json())
         .then(data => {
-            
+            // On injecte le titre.
+            document.getElementById("title-project").innerHTML = data[id].name;
+
+            // On injecte le carrousel.
+            var div = '<img id="img_0" class="carrousel-png" src="'+data[id].path+'img/miniature.png" alt="miniature"></img>';
+            for (var i = 0; i < data[id].nb_photo; i++) {
+                div += '<img id="img_'+(i+1)+'" class="carrousel-png" src="'+data[id].path+'img/'+i+'.png" alt="miniature" hidden></img>';
+            }
+            document.getElementById('carrousel-block-png').innerHTML = div;
+
+            // On injecte le nombre de personne.
+            document.getElementById("pers").innerHTML = data[id].participant;
+
+            // On injecte la date.
+            document.getElementById("years").innerHTML = data[id].years[lang];
+
+            // On injecte le context.
+            document.getElementById("type").innerHTML = data[id].context[lang];
+
+            // On injecte les technologies
+            document.getElementById("tech").innerHTML = data[id].tech;
 
             // Récupération description.
             fetch(data[id].path+'text/description'+terminaison[lang]+'.txt')
