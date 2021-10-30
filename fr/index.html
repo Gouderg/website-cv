@@ -4,9 +4,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
+
+    <!-- Import CSS -->
+    <link href="../assets/css/color.css" rel="stylesheet">
+    <link href="../assets/css/font.css" rel="stylesheet">
+    <link href="../assets/css/header.css" rel="stylesheet">
+    <link href="../assets/css/footer.css" rel="stylesheet">
+    <link href="../assets/css/index.css" rel="stylesheet">
+
+    <!-- Import JS -->
+    <script type="text/javascript" src="../assets/js/header.js" defer></script>
+    <script type="text/javascript" src="../assets/js/footer.js" defer></script>
+    <script type="text/javascript" src="../assets/js/index.js" defer></script>
+
 </head>
 <body>
-    d
+    <header>
+        <div class="logo">
+            <a href="../fr/" class="logo-lien">
+                <img class="logo-photo" src="../../assets/res/img/logo.svg" alt="logo">
+                <h1 id='0' class="logo-text">ILLIEN Victor</h1>
+            </a>
+        </div>
+        
+        <nav class="menu">
+            <li><a class="menu-text" id='1' href="../fr/workexperience.html">Expérience Pro</a></li>
+            <li><a class="menu-text" id='2' href="../fr/projects.html">Projets</a></li>
+            <li><a class="menu-text" id='3' href="../fr/current_setup.html">Setup Actuel</a></li>
+        </nav>
+        
+        <div class="call">
+            <h1 class="language" onclick="changeLang('en')"> <span id="fr" class="active">FR</span> / <span id="en">EN</span></h1>
+        </div>
+        <a id="icon-menu-burger" class="menu-burger" onclick="unrollMenu()">&#9776;</a>
+    </header>
+    <!-- Section use to the burger menu -->
+    <section id="responsive-menu" class="resp-menu">
+        <nav class="resp-nav">
+            <li>
+                <a class="resp-menu-item" id='11' href="../fr/workexperience.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                    <span class="resp-menu-text">Expérience Pro</span>
+                </a>
+            </li>
+            <li>
+                <a class="resp-menu-item" id='22' href="../fr/projects.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>
+                    <span class="resp-menu-text">Projets</span>
+                </a>
+            </li>
+            <li>
+                <a class="resp-menu-item" id='33' href="../fr/current_setup.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/></svg>
+                    <span class="resp-menu-text">Setup Actuel</span>
+                </a>
+            </li>
+        </nav>
+    </section>
+    <main>
+        <!-- First section. -->
+        <section class="presentation">
+            <div class="presentation-left">
+                <div class="presentation-left-pres">
+                    <p>Je suis <span class="pres-bold">ILLIEN Victor,<br>Étudiant ISEN<br><span class="pres-under">Ingénieur Informatique</span></span></p>
+                </div>
+                <div class="presentation-left-desc">
+                    <p>Très motivé et passionné par l'informatique. <br>Je suis à la recherche d'un emploi étudiant ou d'un stage. </p>
+                </div>
+                <div class="button-main">
+                    <a class="button-main-lien" href="https://www.linkedin.com/in/victor-illien-5b10031b2/" target="_blank">Embauchez-moi</a>
+                </div>
+
+            </div>
+            <div class="presentation-right">
+                <img src="../assets/res/img/photo_profil2.jpg" alt="photo-profil" class="pp">
+            </div>
+        </section>
+        
+        <!-- Intersection -->
+        <div class="arrow">
+            <img src="../assets/res/img/svg-menu/down-arrow-blue.png" alt="down-arrow" class="arrow-img" onclick="goTo('hire')">
+        </div>
+
+        <!-- Second section -->
+        <section id="hire" class="should-hire-me">
+            <h1 class="title-hire"><span class="highlight">Pourquoi</span> m'embaucher ?</h1>
+            <div class="studies">
+                <ul class="sub-title-hire"><li><h1>Mes <span class="highlight">É</span>tudes</h1></li></ul>
+                <p class="sub-para">
+                    Je suis actuellement en 4e année d'école d'ingénieur à l'ISEN YNCREA OUEST à Brest. Mes 3 premières années étaient consacrées au cursus de base d'un ingénieur. J'ai pu découvrir l'électronique sur des systèmes embarqués. De plus, j'étais dans une filière spéciale, qui sur l'ensemble de ses trois ans m'a donné un bagage de développeur Full Stack.
+                    Durant mes deux dernières années, je vais me spécialiser dans le domaine des technologies de biomédicales et de santé.
+                </p>
+                <div class="button-resume">
+                    <a class="button-resume-lien" href="../assets/res/pdf/cv.pdf" target="_blank">Mon CV</a>
+                </div>
+            </div>
+
+            <!-- Intersection -->
+            <div class="arrow">
+                <img src="../assets/res/img/svg-menu/down-arrow-blue.png" alt="down-arrow" class="arrow-img" onclick="goTo('skills')">
+            </div>
+
+            <div id="skills" class="skills">
+                <ul class="sub-title-hire"><li><h1>Mes <span class="highlight">S</span>kills</h1></li></ul>
+                <div class="skills-container">
+                    <div>
+                        <h3>Front-end</h3>
+                        <div class="skills-img">
+                            <img src="../assets/res/img/svg-skills/html.svg" alt="icon-html" title="html">
+                            <img src="../assets/res/img/svg-skills/css.svg" alt="icon-css" title="css">
+                            <img src="../assets/res/img/svg-skills/js.svg" alt="icon-js" title="js">
+                            <img src="../assets/res/img/svg-skills/react.svg" alt="icon-react" title="react">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Back-end</h3>
+                        <div class="skills-img">
+                            <img src="../assets/res/img/svg-skills/php.svg" alt="icon-php" title="php">
+                            <img src="../assets/res/img/svg-skills/symfony.svg" alt="icon-symfony" title="symfony">
+                            <img src="../assets/res/img/svg-skills/mysql.svg" alt="icon-mysql" title="mysql">
+                            <img src="../assets/res/img/svg-skills/mongodb.svg" alt="icon-mongodb" title="mongodb">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Logiciels</h3>
+                        <div class="skills-img">
+                            <img src="../assets/res/img/svg-skills/c.svg" alt="icon-c" title="C">
+                            <img src="../assets/res/img/svg-skills/c++.svg" alt="icon-c++" title="C++">
+                            <img src="../assets/res/img/svg-skills/python.svg" alt="icon-python" title="python">
+                            <img src="../assets/res/img/svg-skills/java.svg" alt="icon-java" title="java">
+                        </div> 
+                    </div>
+                    <div>
+                        <h3>OS & MCU</h3>
+                        <div class="skills-img">
+                            <img src="../assets/res/img/svg-skills/ubuntu.svg" alt="icon-ubuntu" title="Ubuntu">
+                            <img src="../assets/res/img/svg-skills/windows.svg" alt="icon-c++" title="Windows">
+                            <img src="../assets/res/img/svg-skills/raspberry.svg" alt="icon-raspberry" title="Raspberry Pi">
+                            <img src="../assets/res/img/svg-skills/arduino.svg" alt="icon-arduino" title="Arduino">
+                        </div> 
+                    </div>
+                </div>
+                <div class="skills-website">
+                    <h3>Siteweb que j'utilise pour améliorer ma logique et ma pratique du langage python.</h3>
+                    <div class="website-container">
+                        <a href="https://adventofcode.com/" target="_blank">
+                            <figure>
+                                <img src="../assets/res/img/svg-skills/Advent_Of_Code_Logo.png" alt="aoc" title="aoc" class="website-container-img">
+                                <figcaption>Advent of code</figcaption>
+                            </figure>
+                        </a>
+                        <a href="https://www.hackerrank.com/gouderg" target="_blank">
+                            <figure>
+                                <img src="../assets/res/img/svg-skills/HackerRank_logo.png" alt="hackerrank" title="hackerrank" class="website-container-img">
+                                <figcaption>Hackerrank</figcaption>
+                            </figure>
+                        </a>
+                        <a href="https://pydefis.callicode.fr/user/mhof/Groderg/7416186026f95e4a" target="_blank">
+                            <figure>
+                                <img src="../assets/res/img/svg-skills/callicode-logo.png" alt="pydefi" title="pydefi" class="website-container-img">
+                                <figcaption>Pydefi</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intersection -->
+            <div class="arrow">
+                <img src="../assets/res/img/svg-menu/down-arrow-blue.png" alt="down-arrow" class="arrow-img" onclick="goTo('motivation')">
+            </div>
+
+            <div id="motivation" class="motivation">
+                <ul class="sub-title-hire"><li><h1>Ma <span class="highlight">M</span>otivation</h1></li></ul>
+                <p class="sub-para">
+                    De nature curieuse, je cherche perpétuellement à m'améliorer notamment avec des projets personnels sur différents thèmes et langages.
+                    De plus, j'ai réalisé des projets professionnels pour la junior entreprise de mon école. Cela m'a permis de me confronter aux attentes des clients.
+                </p>
+                <div class="button-discover">
+                    <a class="button-discover-lien more-space" href="../en/projects.html">Découvrez mes projets</a>
+                </div>
+            </div>
+        </section>
+        
+        <div class="arrow-up">
+            <img src="../assets/res/img/svg-menu/down-arrow-blue.png" alt="down-arrow" class="arrow-img" onclick="backToTop()">
+        </div>
+        
+        
+    </main>
+    <footer class="footer">
+        <div class="icons">
+            <div id="validate" class="validate-box">
+                <span class="validate-message">Copié !</span>
+            </div>
+            <img class='icon' src="../assets/res/img/svg-footer/whitediscord.svg" alt="discord" onclick="copyDiscord()" title="gouderg#5425">
+            <a href="https://www.linkedin.com/in/victor-illien-5b10031b2/"><img class='icon' src="../assets/res/img/svg-footer/LinkedINlinkldin.svg" alt="linkdlin"></a>
+            <a href="https://github.com/Gouderg"><img class='icon' src="../assets/res/img/svg-footer/whitegithub.svg" alt="github"></a>
+            <img class='icon' src="../assets/res/img/svg-footer/whitegmail.svg" alt="gmail" onclick="copyGmail()" title="victor.illien974@gmail.com">
+        </div>
+        <div class="copyright">Copyright © 2021</div>
+    </footer>
 </body>
 </html>
