@@ -23,6 +23,11 @@ footer {
     margin: 15px 0px;
 }
 
+.copyright a, .copyright a:after {
+    text-decoration: none;
+    color: white;
+}
+
 .icon {
     padding: 10px;
 }
