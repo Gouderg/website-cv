@@ -21,9 +21,10 @@ footer {
     font-family: 'Poppins-ExtraBold';
     color: white;
     margin: 15px 0px;
+    
 }
 
-.copyright a, .copyright a:after {
+.copyright>a, .copyright>a:after, .copyright>a:link  {
     text-decoration: none;
     color: white;
 }
