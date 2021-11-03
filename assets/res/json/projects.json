@@ -7,7 +7,8 @@
         "participant": 1,
         "path": "../assets/res/projects/josephIA/",
         "tag": ["Software", "Top-6"],
-        "nb_photo": 4
+        "nb_photo": 4,
+        "github": "https://github.com/Gouderg/JosephIA"
     },
 
     "1": {
@@ -18,7 +19,8 @@
         "participant": 1,
         "path": "../assets/res/projects/aoc/",
         "tag": ["Software", "Top-6"],
-        "nb_photo": 3
+        "nb_photo": 3,
+        "github": "https://github.com/Gouderg/advent-of-code"
     },
 
     "2": {
@@ -29,7 +31,8 @@
         "participant": 2,
         "path": "../assets/res/projects/app-brocoli/",
         "tag": ["Web", "Top-6"],
-        "nb_photo": 6
+        "nb_photo": 6,
+        "github": "https://github.com/Gouderg/app-Brocoli"
     },
 
     "3": {
@@ -40,7 +43,8 @@
         "participant": 1,
         "path": "../assets/res/projects/josephSlave/",
         "tag": ["Software"],
-        "nb_photo": 6
+        "nb_photo": 6,
+        "github": "https://github.com/Gouderg/JosephSlave"
     },
 
     "4": {
@@ -51,7 +55,8 @@
         "participant": 1,
         "path": "../assets/res/projects/dynamic_simulation/",
         "tag": ["Software", "Top-6"],
-        "nb_photo": 4
+        "nb_photo": 4,
+        "github": "https://github.com/Gouderg/dynamic-simulation"
     },
 
     "5": {
@@ -62,7 +67,8 @@
         "participant": 1,
         "path": "../assets/res/projects/boids/",
         "tag": ["Software"],
-        "nb_photo": 3
+        "nb_photo": 3,
+        "github": "https://github.com/Gouderg/Boids"
     },
 
     "6": {
@@ -73,7 +79,8 @@
         "participant": 4,
         "path": "../assets/res/projects/learnstation/",
         "tag": ["Web"],
-        "nb_photo": 6
+        "nb_photo": 6,
+        "github": "https://github.com/Learn-Station/learn-station"
     },
 
     "7": {
@@ -84,7 +91,8 @@
         "participant": 1,
         "path": "../assets/res/projects/jeudelavie/",
         "tag": ["Software", "Top-6"],
-        "nb_photo": 6
+        "nb_photo": 6,
+        "github": "https://github.com/Gouderg/jeuDeLaVie"
     },
 
     "8": {
@@ -95,7 +103,8 @@
         "participant": 1,
         "path": "../assets/res/projects/oximeter/",
         "tag": ["Software"],
-        "nb_photo": 0
+        "nb_photo": 0,
+        "github": "https://github.com/Gouderg/a3-projet-c"
     },
 
     "9": {
@@ -106,7 +115,8 @@
         "participant": 1,
         "path": "../assets/res/projects/fractal/",
         "tag": ["Software"],
-        "nb_photo": 7
+        "nb_photo": 7,
+        "github": "https://github.com/Gouderg/fractal-simulation"
     },
 
     "10": {
@@ -117,7 +127,8 @@
         "participant": 1,
         "path": "../assets/res/projects/pong/",
         "tag": ["Software"],
-        "nb_photo": 3
+        "nb_photo": 3,
+        "github": "https://github.com/Gouderg/pong-brocoli"
     },
 
     "11": {
@@ -128,7 +139,8 @@
         "participant": 1,
         "path": "../assets/res/projects/maze_solver/",
         "tag": ["Software"],
-        "nb_photo": 4
+        "nb_photo": 4,
+        "github": "https://github.com/Gouderg/ProjetC-2019-CIR1"
     },
 
     "12": {
@@ -139,6 +151,7 @@
         "participant": 1,
         "path": "../assets/res/projects/pressurized_octopus/",
         "tag": ["Web", "Top-6"],
-        "nb_photo": 7
+        "nb_photo": 7,
+        "github": "https://github.com/Gouderg/pressurized-octopus"
     }
 }

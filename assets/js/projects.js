@@ -152,8 +152,11 @@ function displayOneProject(id) {
             // On injecte le context.
             document.getElementById("type").innerHTML = data[id].context[lang];
 
-            // On injecte les technologies
+            // On injecte les technologies.
             document.getElementById("tech").innerHTML = data[id].tech;
+
+            // On injecte le lien github.
+            document.getElementById("lien-git").href = data[id].github;
 
             // Récupération description.
             fetch(data[id].path+'text/description'+terminaison[lang]+'.txt')
