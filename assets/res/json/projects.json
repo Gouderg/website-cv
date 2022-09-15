@@ -150,8 +150,33 @@
         "context": ["Projet Scolaire - A3", "School Project - A3"],
         "participant": 1,
         "path": "../assets/res/projects/pressurized_octopus/",
-        "tag": ["Web", "Top-6"],
+        "tag": ["Web"],
         "nb_photo": 7,
         "github": "https://github.com/Gouderg/pressurized-octopus"
+    },
+
+    "13": {
+        "name": "Waves painting", 
+        "tech": "Javascript",
+        "years": ["Août 2022", "August 2022"],
+        "context": ["Projet Personnel", "Personnal Project"],
+        "participant": 1,
+        "path": "../assets/res/projects/waves_painting/",
+        "tag": ["Web"],
+        "nb_photo": 3,
+        "github": "https://github.com/Gouderg/waves-drawing"
+    },
+
+    "14": {
+        "name": "Sort sound", 
+        "tech": "C++ - SFML",
+        "years": ["Septembre 2022", "September 2022"],
+        "context": ["Projet Personnel", "Personnal Project"],
+        "participant": 1,
+        "path": "../assets/res/projects/sort_sound/",
+        "tag": ["Software", "Top-6"],
+        "nb_photo": 3,
+        "github": "https://github.com/Gouderg/sort-sound"
     }
+
 }

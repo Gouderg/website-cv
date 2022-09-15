@@ -1,0 +1,3 @@
+Une classe gère l'algorithme de tri. Celle-ci va dire à la classe qui gère les petits batons de se mettre à jour. Il est intéréssant de mettre le son car l'algorithme produit un son pour chaque baton.
+
+L'idée vient de  Timo Bingmann (https://www.youtube.com/watch?v=kPRA0W1kECg)

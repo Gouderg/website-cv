@@ -1,0 +1,3 @@
+A class manages the sorting algorithm. This one will tell the class that manages the small sticks to update itself. It is interesting to put the sound because the algorithm produces a sound for each stick.
+
+The idea comes from Timo Bingmann (https://www.youtube.com/watch?v=kPRA0W1kECg)

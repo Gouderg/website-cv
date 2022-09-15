@@ -1,0 +1,1 @@
+Visualisation de différents algorithmes de tri. Le but était de m'améliorer en C++ ainsi que de découvrir les algorithmes de tri existant.

@@ -1,0 +1,5 @@
+Pour utiliser ce programme, il faut la librairie graphique SFML.
+<br><br>
+Ensuite, tapez <span class="code">make</span>
+<br><br>
+Puis, tapez <span class="code">./sortman -h</span> pour vous laissez guider.
