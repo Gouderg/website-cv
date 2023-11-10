@@ -66,6 +66,11 @@ main {
     margin-bottom: 1%;
 }
 
+.current {
+    border: 2px solid gold !important;
+    box-shadow: 0px 0px 10px 3px gold !important;
+}
+
 .hide {
     top: 100px;
     opacity: 0;
