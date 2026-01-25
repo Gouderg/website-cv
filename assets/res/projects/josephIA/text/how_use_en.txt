@@ -1,4 +1,0 @@
-<h2>Requirements</h2>
-<ul><li> python3 </li></ul>
-
-You need to go to the appropriate directory and run the script josephIA.py

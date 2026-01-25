@@ -1,1 +1,0 @@
-Dans le cadre de notre première année à l'ISEN, et notamment du cours de C, nous avons codé un petit robot qui doit trouver la sortie dans un espace fermé en un minimum de coups.

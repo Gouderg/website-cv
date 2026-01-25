@@ -1,2 +1,0 @@
-To use the USB port, you need the ft2xx.h library, but it only works under Windows.
-To test just with an input file, you need to use record_bin.dat.

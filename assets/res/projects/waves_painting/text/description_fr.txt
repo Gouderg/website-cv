@@ -1,1 +1,0 @@
-Implémentation de l'algorithme wavefunction collapse. Le but était de pouvoir dessiner différentes formes géométriques avec des patterns et des règles prédéfinis.

@@ -1,1 +1,0 @@
-On part du principe que dans une grille, toutes les cases sont dans un état de superposition. Si l'une des cases prend un état fixe alors cela va réduire les états possibles pour les cases aux alentours.

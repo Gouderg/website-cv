@@ -1,8 +1,0 @@
-Le fonctionnement du bot est d'exécuter la commande écrite dans un channel textuel.
-Le bot analyse chaque message et si le message commence avec un point d'exclamation suivie d'un mot qu'il connaît alors il va traiter la ligne.
-Les commandes les 3 commandes les plus intéressantes sont les suivantes:
-<ul>    
-    <li>!nasa -pic => Cette commande utilise une API mise à disposition par la NASA. Elle renvoie une image de l'espace avec une petite description. </li>
-    <li>!meteo Brest fr => Cette commande utilise l'api d'OpenWeather. Elle donne des caractéristiques météorologiques la ville choisie.</li>
-    <li>!play url_youtube => Cette commande permet de jouer le son d'une vidéo YouTube. Le bot va se connecter dans un channel vocal et commencer a jouer le son de la vidéo choisit.</li>
-</ul>

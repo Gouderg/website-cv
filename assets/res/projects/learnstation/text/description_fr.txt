@@ -1,3 +1,0 @@
-Learnstation est un projet réalisé avec 4 amis. Le but de ce projet était de réaliser un site qui référence les bootcamps axé sur la programmation. 
-<br>
-Le site est accessible à cette adresse:  http://178.128.161.255:8000

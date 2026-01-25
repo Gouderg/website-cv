@@ -1,1 +1,0 @@
-To use these programs, you need the SFML graphics library.

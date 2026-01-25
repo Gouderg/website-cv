@@ -1,7 +1,0 @@
-Pour utiliser ce programme, il faut Qt5.
-<br><br>
-Tout d'abord, il faut compiler avec la commande: <span class="code">qmake</span>
-<br><br>
-Et ensuite, il faut compiler le code avec la commande: <span class="code">make</span>
-<br><br>
-Enfin, on exécute le code avec la commande: <span class="code">./pong</span>

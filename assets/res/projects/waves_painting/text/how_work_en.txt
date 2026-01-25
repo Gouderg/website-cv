@@ -1,1 +1,0 @@
-It is assumed that in a grid all cells are in an overlapping state. If one of the cells takes a fixed state then this will reduce the possible states for the surrounding cells.

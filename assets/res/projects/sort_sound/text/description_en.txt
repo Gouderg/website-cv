@@ -1,1 +1,0 @@
-Visualization of different sorting algorithms. The goal was to improve my C++ skills and to discover existing sorting algorithms.
