@@ -1,0 +1,111 @@
+.side {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-500);
+    align-items: center;
+    color: var(--white-400);
+    width: 12rem;
+    padding: 4em 2em 2em 2em;
+    gap: 1em;
+    border: solid 1px var(--grey-100);
+    border-radius: 2em;
+    transition: var(--main-transistion);
+}
+
+.side-photo {
+    width: 10em;
+    border-radius: 15%;
+    overflow: hidden;
+}
+
+
+.side-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.side-name {
+    font-family: 'Outfit';
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.side-job{
+    font-size: 0.8em;
+    padding: 0.30em 1.5em;
+    background-color: var(--grey-200);
+    color: var(--white-900);
+    font-family: 'Inter';
+    border-radius: 0.5em;
+}
+
+.side-separation {
+    width: 100%;
+}
+
+.side-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow: hidden;
+}
+
+.side-email, .side-location, .side-phone {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+.side-contact-header {
+    font-family: 'Inter';
+    font-weight: 200;
+    color: var(--white-100);
+    font-size: 0.8em;
+}
+
+.side-contacts-text {
+    font-family: 'Inter';
+    font-weight: 400;
+    color: var(--white-900);
+    font-size: 0.8em;
+}
+
+
+.side-contacts-icon {
+    width: 1.2em;
+    border-left: solid 1px var(--grey-200);
+    border-top: solid 1px var(--grey-200);
+    border-radius: 15%;
+    padding: 0.5em;
+    margin-right: 20px; 
+    box-shadow: 
+    5px 5px 10px var(--grey-800);
+}
+
+.side-contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-container-icons {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+@media (max-width: 1250px) {
+    
+    .side {
+        flex-direction: row;
+        padding: 2em;
+        width: max-content;
+    }
+    .side-contacts, .side-separation, .side-container-icons {
+        display: none;
+    }   
+}
