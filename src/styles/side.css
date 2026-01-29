@@ -4,12 +4,14 @@
     background-color: var(--grey-500);
     align-items: center;
     color: var(--white-400);
-    width: 12rem;
-    padding: 4em 2em 2em 2em;
+    width: auto;
+    padding: 4em 3em 2em 3em;
     gap: 1em;
     border: solid 1px var(--grey-100);
     border-radius: 2em;
     transition: var(--main-transistion);
+    position: sticky;
+    top: 2em;
 }
 
 .side-photo {
@@ -29,7 +31,7 @@
 
 .side-name {
     font-family: 'Outfit';
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.5em;
 }
 
@@ -44,6 +46,9 @@
 
 .side-separation {
     width: 100%;
+    border: none;
+    height: 1px;
+    background-color: var(--grey-100);
 }
 
 .side-contacts {
@@ -82,8 +87,14 @@
     border-radius: 15%;
     padding: 0.5em;
     margin-right: 20px; 
-    box-shadow: 
-    5px 5px 10px var(--grey-800);
+    box-shadow: 5px 5px 10px var(--grey-800);
+}
+
+/* 3. Déclenchement au survol */
+.side-contacts-icon:hover {
+  animation: shake 0.2s infinite; /* L'animation tourne en boucle */
+  /* On peut aussi changer la couleur ou l'échelle pour plus de punch */
+  transform: scale(1.2);
 }
 
 .side-contact-container {
@@ -101,11 +112,31 @@
 @media (max-width: 1250px) {
     
     .side {
+        /* top: 2em; */
+        position: relative;
         flex-direction: row;
-        padding: 2em;
-        width: max-content;
+        width: 950px;
+        padding: 0;
     }
     .side-contacts, .side-separation, .side-container-icons {
         display: none;
     }   
+}
+
+@media (max-width: 1024px) {
+    .side {
+        width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .side {
+        width: 520px;
+    }
+}
+
+@media (max-width: 580px) {
+    .side {
+        width: auto;
+    }
 }

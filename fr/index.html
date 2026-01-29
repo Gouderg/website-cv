@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Inspiration from https://aakashrajbanshi.com.np/ -->
+    <!-- ILLIEN Victor - 2026 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ILLIEN Victor | Portfolio</title>
 
+    <link rel="stylesheet" href="../src/styles/base.css">
     <link rel="stylesheet" href="../src/styles/main.css">
     <link rel="stylesheet" href="../src/styles/side.css">
+    <link rel="stylesheet" href="../src/styles/header.css">
+    <link rel="stylesheet" href="../src/styles/resume.css">
+
+    <script src="../src/js/header.js" defer></script>
 </head>
 <body>
-    <div class="side">
+    <section class="side">
         <div class="side-photo-container">
             <img class="side-photo" src="../public/photo_profil.jpeg" alt="Photo de profil">
         </div>
@@ -62,7 +69,184 @@
                 <img src="../public/icons/brand-linkedin.svg" alt="LinkedIn Icon">
             </a>
         </div>
-    </div>
-    <div class="main-section"></div>
+    </section>
+    <section class="main-section">
+        <div class="main-header">
+            <ul class="main-header-ul">
+                <li id="about_header" class="main-header-li">À Propos</li>
+                <li id="resume_header" class="main-header-li">CV</li>
+                <li id="portfolio_header" class="main-header-li">Portfolio</li>
+            </ul>
+        </div>
+        
+        <section id="about" class="section-container">
+            <div class="main-section-header">
+                <span class="main-section-title">À Propos</span>
+                <hr class="main-section-separation">
+            </div>
+  
+            <div>
+                <p class="main-text">Ingénieur passionné par l'intersection entre l'intelligence artificielle et le développement web, je possède une expertise solide dans la création de solutions technologiques complexes, de l'acquisition de données à leur diffusion.</p>
+
+                <p class="main-text">Fort de mon expérience en tant que Lead Développeur à l'IFREMER, j'ai piloté des projets d'envergure internationale, notamment la création de chaînes de traitement de données massives (15 To) et le développement d'outils de visualisation avancés sous Next.js et FastAPI. Mon parcours m'a permis de maîtriser aussi bien le Deep Learning (fine-tuning, segmentation, computer vision) que l'ingénierie logicielle agile.
+                            
+                <p class="main-text">Spécialiste de l'innovation de terrain, j'ai conçu et déployé des systèmes autonomes (ASV, catamarans) et contribué à des projets lauréats du Prix Science Ouverte, garantissant des standards de qualité rigoureux (FAIR, OGC).</p>
+                    
+                <p class="main-text">Si vous recherchez un ingénieur polyvalent, capable de transformer des problématiques complexes en applications fluides et performantes, je suis prêt à mettre mon expertise au service de vos ambitions. Collaborons pour donner vie à vos visions technologiques les plus audacieuses !</p>
+            </div>
+
+        </section>
+
+        <section id="resume" class="section-container">
+            <div class="main-section-header">
+                <span class="main-section-title">CV</span>
+                <hr class="main-section-separation">
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-header">
+                    <img class="resume-icon" src="../public/icons/book-open.svg" alt="Education Icon">
+                    <span class="timeline-header-title">Education</span>
+                </div>
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                        <span class="ti-place">ISEN YCREA OUEST, Brest</span>
+                        <span class="ti-title">Diplôme d'ingénieur en Traitement du Signal spécialité Intelligence Artificielle</span>
+                        <span class="ti-date">2018 — 2023</span>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="ti-place">Lycée Levavasseur, Ile de la Réunion</span>
+                        <span class="ti-title">Baccalauréat Scientifique SI spé ISN</span>
+                        <span class="ti-date">2018</span>
+                    </li>
+                </ol>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-header">
+                    <img class="resume-icon" src="../public/icons/circuitry.svg" alt="Experience Icon">
+                    <span class="timeline-header-title">Expériences</span>
+                </div>
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                        <span class="tiep-post">Ingénieur BioInformatique — Lead Développeur</span>
+                        <span class="tiep-entreprise">Ifremer Délégation Océan Indien</span>
+                        <span class="tiep-date">Oct, 2023 — Déc 2025</span>
+                        <span class="tiep-place">Le Port, Ile de la Réunion</span>
+                        <ul class="tiep-activities">
+                            <li>Création d’une chaîne de traitement pour 15 To de données (2,6 millions d’images) de l’acquisition à la diffusion en utilisant les normes OGC, DarwinCore, et les principes FAIR.</li>
+                            <li>Aggrégation de données halieutiques des bases IOSSS/FLOPPED/GERMON/DMX/POPSICLE.</li>
+                            <li>Conception d’applications et de serveurs (Next.js, FastAPI, Dash) pour visualisation des données.</li>
+                            <li>Fine-tuning multilabel pour la classification/segmentation automatisée des taxons et substrats marins.</li>
+                            <li>Conception et contrôle d’un catamaran autonome pour le prélèvement d’ADNe. (Projet Popsicle)</li>
+                            <li>Maintenance et déploiement d’un ASV pour l’acquisition de données marines. (Projet Plancha)</li>
+                        </ul>
+                        <hr class="tiep-sep">
+                        <span class="tiep-title">Récompenses</span>
+                        <ul class="tiep-activities">
+                            <li><b>Prix Science Ouverte des Données de la Recherche (Team Award)</b><br>
+                            Issued by Ministère de l’Enseignement Supérieur, de la Recherche et de l’Espace, December 2025<br>
+                            Project: "Seatizen - Données d’imagerie des écosystèmes coralliens", <a href="https://www.enseignementsup-recherche.gouv.fr/fr/remise-des-prix-science-ouverte-edition-2025-100469" target="_blank" rel="noopener noreferrer"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a> </li>
+                        </ul>
+                        <hr class="tiep-sep">
+                        <span class="tiep-title">Publications</span>
+                        <ul class="tiep-activities">
+                            <li><b>The Point is the Mask: Scaling coral reef segmentation with weak supervision</b> M. Contini, <b>V. Illien</b>, <i> al. Proceedings of the IEEE/CVF International Conference on Computer Vision, 2025, <a rel="noopener noreferrer" target="_blank" href="https://openaccess.thecvf.com/content/ICCV2025W/CVAUI%20%26%20AAMVEM/html/Contini_The_point_is_the_mask_scaling_coral_reef_segmentation_with_ICCVW_2025_paper.html"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a></i></li>
+                            <li><b>From underwater to drone: A novel multi-scale knowledge distillation approach for coral reef monitoring</b> M. Contini, <b>V. Illien</b>, <i>et al. Ecological Informatics</i>, 2025, <a rel="noopener noreferrer" target="_blank" href="https://doi.org/10.1016/j.ecoinf.2025.103149"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a> </li>
+                            <li><b>Seatizen Atlas: a collaborative dataset of underwater and aerial marine imagery</b> M. Contini, <b>V. Illien</b>, <i>et al. Scientific Data</i>, 2025, <a rel="noopener noreferrer" target="_blank" href="https://doi.org/10.1038/s41597-024-04267-z"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a></li>
+                        </ul>
+                        <hr class="tiep-sep">
+                        <span class="tiep-title">Séminaires</span>
+                        <ul class="tiep-activities">
+                            <li>École Bridges x DATA TERRA 2025, 
+                                <a href="https://www.bridges-wio.com/fr/2026/01/13/ecoles-bridges-x-data-terra-une-premiere-edition-a-la-reunion-en-decembre-2025/" target="_blank" rel="noopener noreferrer">
+                                    <img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon">
+                                </a>
+                            </li>
+                            <li>Rencontres géomatique de la réunion 2024, <a href="https://www.youtube.com/watch?v=ZKwCdhyOxas" target="_blank" rel="noopener noreferrer"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a></li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Développeur Full Stack — Alternance</span>
+                        <span class="tiep-entreprise">CERVVAL</span>
+                        <span class="tiep-date">Oct. 2022 — Sept. 2023</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">Logiciel de commande de service pour la RATP.</span>
+                        <ul class="tiep-activities">
+                            <li>Evolution au sein d'une équipe Agile de 7 personnes.</li>
+                            <li>Prise en main d'un framework TypeScript interne et d'un logiciel ayant 2 ans de développement.</li>
+                            <li>Optimisation globale de l'architecture logicielle (ajout de fonctionnalités Fullstack).</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Développeur — Stage technique M1</span>
+                        <span class="tiep-entreprise">CIIRC Czech Technical University</span>
+                        <span class="tiep-date">Oct. — Aou. 2022</span>
+                        <span class="tiep-place">Prague, République Tchèque</span>
+                        <span class="tiep-expe">Amélioration d'un système d'eye-tracking basée sur des réseaux de neurones.</span>
+                        <ul class="tiep-activities">
+                            <li>Entraînement et inférence avec l’architecture Nvgaze.</li>
+                            <li>Installation de l’environnement de développement Nvidia TensorRT depuis un disque vierge.</li>
+                            <li>Optimisation de l’inférence à toutes les étapes (flux vidéo, prédictions, écriture).</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Projet M1</span>
+                        <span class="tiep-entreprise">ISEN YNCREA OUEST</span>
+                        <span class="tiep-date">Jan. — Avr. 2022</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">Mise en place d'un système de monitoring énergétique pour un SMEn ISO 50001.</span>
+                        <ul class="tiep-activities">
+                            <li>Conception de modules Arduino intégrant des capteurs de courants, tensions, températures et luminosités.</li>
+                            <li>Implémentation d'une communication radio entre les modules Arduino et une Raspberry Pi pour la collecte et le stockage centralisé des données.</li>
+                            <li>Configuration de la Raspberry Pi en point d'accès (hot-spot) et développement d'une interface web interactive pour monitorer les capteurs et visualiser les données en temps réel.</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Tutorat pour la formation simplon de Microsoft</span>
+                        <span class="tiep-entreprise">ISEN YNCREA OUEST</span>
+                        <span class="tiep-date">Jan. — Mai. 2021-22</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">60 heures de tutorat pour plusieurs adultes en reconversion durant 2 années consécutives.</span>
+                        <ul class="tiep-activities">
+                            <li>Accompagnement et explication sur les bases de Python et MySQL/MongoDB</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Site Wordpress pour une brasserie</span>
+                        <span class="tiep-entreprise">Storlok</span>
+                        <span class="tiep-date">Mar. — Mai. 2021</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">Création d'un site pour une brasserie dans le Finistère.</span>
+                        <ul class="tiep-activities">
+                            <li>Découverte du CMS Wordpress.</li>
+                            <li>Déploiement et gestion du nom de domaine.</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Première participation à l'Actinspace</span>
+                        <span class="tiep-entreprise">ActInSpace</span>
+                        <span class="tiep-date">Novembre 2021</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">Pendant un week-end, j'ai travaillé sur le projet MoonRover dont le but était de trouver de l'eau sur la lune en collaboration avec 3 participants.</span>
+                    </li>
+                </ol>
+            </div>
+
+            <a href="../public/pdf/cv_ILLIEN.pdf" download="cv_ILLIEN_VICTOR" class="btn-cv">
+                <img src="../public/icons/file-pdf.svg" alt="File Pdf Icon">
+                Télécharger mon CV
+            </a>
+        </section>
+
+        <section id="portfolio" class="section-container">
+            <div class="main-section-header">
+                <span class="main-section-title">Portfolio</span>
+                <hr class="main-section-separation">
+            </div>
+        </section>
+
+
+    </section>
 </body>
 </html>
