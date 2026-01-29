@@ -23,10 +23,13 @@
 
 
 .main-header-li {
-    cursor: pointer;
     color: var(--white-600);
 }
 
+.main-header-li:hover {
+    cursor: pointer;
+    color: var(--orange-100) !important ; 
+} 
 
 
 @media (max-width: 1024px) {

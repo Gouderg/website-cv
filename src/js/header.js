@@ -8,8 +8,8 @@ const about_header = document.getElementById("about_header");
 const resume_header = document.getElementById("resume_header");
 const folio_header = document.getElementById("portfolio_header");
 
-resume_header.style.setProperty("color", "var(--orange-100)");
-about_section.style.setProperty("display", "none");
+about_header.style.setProperty("color", "var(--orange-100)");
+resume_section.style.setProperty("display", "none");
 folio_section.style.setProperty("display", "none");
 
 about_header.addEventListener('click', () => {

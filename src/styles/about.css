@@ -1,0 +1,7 @@
+.about-title {
+    font-weight: 600;
+    font-size: x-large;
+    font-family: 'Outfit';
+    color: var(--white-600);
+    margin: 1em;
+}
