@@ -144,6 +144,7 @@
     text-decoration: none;
     text-transform: none;
     color: var(--orange-100);
+    animation: var(--animate-pulse);
 }
 
 .tiep-sep {

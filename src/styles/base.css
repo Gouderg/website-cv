@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Outfit:wght@200;400;600;700;800&display=swap');
 
+@keyframes pulse {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+
 :root {
     --white-100: #ffffff;
     --white-200: #fcfcfc;
@@ -32,6 +39,8 @@
     --orange-900: #915416;
 
     --main-transition: all ease-in-out 0.5s;
+    --animate-pulse: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite
+
 }
 
 h1, h2, h3 {
