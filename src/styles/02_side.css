@@ -112,12 +112,19 @@
 @media (max-width: 1250px) {
     
     .side {
-        /* top: 2em; */
         position: relative;
         flex-direction: row;
         width: 950px;
-        padding: 0;
+        padding: 0em;
+        min-height: 10em;
+        margin-bottom: 2em;
     }
+
+    .side-photo {
+        width: 7em;
+        margin: 2em
+    }
+
     .side-contacts, .side-separation, .side-container-icons {
         display: none;
     }   
@@ -137,6 +144,31 @@
 
 @media (max-width: 580px) {
     .side {
-        width: auto;
+        width: 100%;
+        min-width: max-content;
+    }
+
+    .side-photo {
+        width: 5em;
+        margin: 1em;
+    }
+
+    .side-info-container {
+        align-items: flex-start;
+    }
+
+    .side-name {
+        font-family: 'Outfit';
+        font-weight: 700;
+        font-size: 0.8em;
+    }
+
+    .side-job{
+        font-size: 0.6em;
+        padding: 0.30em 1.5em;
+        background-color: var(--grey-200);
+        color: var(--white-900);
+        font-family: 'Inter';
+        border-radius: 0.5em;
     }
 }

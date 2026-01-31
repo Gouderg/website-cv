@@ -1,8 +1,7 @@
 .main-header {
     position: absolute;
     right: 0;
-    background-color: var(--grey-300);
-    opacity: 0.8;
+    background-color: var(--grey-300-80);
 
     width: 40%;
     border-end-start-radius: 1em;
@@ -34,14 +33,16 @@
 
 @media (max-width: 1024px) {
 
+
     .main-header {
-        position: absolute;
-        bottom: 0;
-        left: 0;
+        position: fixed;
         width: 100%;
+        bottom: 0;
         border-start-start-radius: 1em;
         border-start-end-radius: 1em;
         border-end-start-radius: 0em;
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(5px);
     }
 
     .main-header-ul {
@@ -49,6 +50,17 @@
         align-items: center;
         justify-content: center;
         gap: 4em;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    .main-header-ul {
+        font-size: small;
+        flex-wrap: wrap;
+        gap: 1em;
+        min-width: min-content;
     }
 
 }

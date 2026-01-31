@@ -84,3 +84,47 @@
 .about-stack-icon {
     width: 48px;
 }
+
+@media (max-width: 1024px) {
+    .about-domaine {
+        flex-direction: column;
+    }
+
+    .about-card {
+        width: auto;
+    }
+}
+
+@media (max-width: 580px) {
+    .about-card {
+        flex-direction: column;
+    }
+
+    .about-card-icon {
+        align-self: center;
+    }
+
+    .about-card-container {
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: medium;
+    }
+
+    .about-stack span {
+        font-size: small;
+    }
+
+    .about-stack-icon {
+        width: 24px;
+    }
+
+    .about-card-title {
+        font-size: small;
+    }
+
+    .about-card-text {
+        font-size: x-small;
+    }
+}

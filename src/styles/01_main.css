@@ -5,6 +5,7 @@
     overflow: hidden;
     border: solid 1px var(--grey-100);
     position: relative;
+    margin-bottom: 3em;
 }
 
 
@@ -48,7 +49,6 @@
 @media (max-width: 1250px) {
     
     .main-section {
-
         width: 950px;
     }
 }
@@ -57,9 +57,18 @@
     .main-section {
         width: 700px;
     }
+
+    
+    .main-section-separation {
+        border: 1px solid var(--orange-100);
+    }
+    
 }
 
 @media (max-width: 768px) {
+    .main-section-title {
+        font-size: large;
+    }
     .main-section {
         width: 520px;
     }
@@ -68,5 +77,9 @@
 @media (max-width: 580px) {
     .main-section {
         width: auto;
+    }
+
+    .main-text {
+        font-size: x-small;
     }
 }
