@@ -9,9 +9,13 @@
     gap: 1em;
     border: solid 1px var(--grey-100);
     border-radius: 2em;
-    transition: var(--main-transistion);
+    transition: var(--main-transition);
     position: sticky;
     top: 2em;
+}
+
+.side-arrow {
+    display: none;
 }
 
 .side-photo {
@@ -26,7 +30,6 @@
     flex-direction: column;
     align-items: center;
     gap: 1em;
-
 }
 
 .side-name {
@@ -90,10 +93,8 @@
     box-shadow: 5px 5px 10px var(--grey-800);
 }
 
-/* 3. Déclenchement au survol */
 .side-contacts-icon:hover {
-  animation: shake 0.2s infinite; /* L'animation tourne en boucle */
-  /* On peut aussi changer la couleur ou l'échelle pour plus de punch */
+  animation: var(--animate-shake); 
   transform: scale(1.2);
 }
 
@@ -109,30 +110,93 @@
     gap: 1em;
 }
 
+.side-show {
+    display: flex !important;
+}
+
+.side-max-width-min-content {
+    max-width: min-content;
+}
+
+.side-min-width-max-content {
+    min-width: max-content;
+}
+
 @media (max-width: 1250px) {
     
     .side {
         position: relative;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: flex-start;
         width: 950px;
         padding: 0em;
         min-height: 10em;
         margin-bottom: 2em;
     }
 
+    .side-basic-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
     .side-photo {
         width: 7em;
         margin: 2em
     }
 
+    .side-contacts {
+        margin: 1em 2em;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vh;
+    }
+
+    .side-separation {
+        width: 70%;
+    }
+
+    .side-container-icons {
+        margin: 1em 2em;
+        justify-content: center;
+        width: 100vh;
+    }
+
     .side-contacts, .side-separation, .side-container-icons {
         display: none;
-    }   
+    } 
+    
+    .side-arrow {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        padding: 2em;
+    }
+
+    .side-arrow:hover {
+        cursor: pointer;
+    }
+
+    .side-arrow img {
+        animation: var(--animate-bounce);
+    }
+
 }
 
 @media (max-width: 1024px) {
     .side {
         width: 700px;
+    }
+
+    .side-contacts {
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+
+    .side-container-icons {
+        justify-content: flex-start;
     }
 }
 
@@ -145,7 +209,6 @@
 @media (max-width: 580px) {
     .side {
         width: 100%;
-        min-width: max-content;
     }
 
     .side-photo {

@@ -6,6 +6,7 @@
     border: solid 1px var(--grey-100);
     position: relative;
     margin-bottom: 3em;
+    transition: var(--main-transition);
 }
 
 
