@@ -1,5 +1,0 @@
-The first difficulty of the project was to generate the map and the robot before implementing the robot algorithm. Then I started to think about how the robot will exit the maze.
-If the exit is on a wall, we can use the right hand technique which consists in going along the wall and keeping it to the right.
-But to find an exit that is in the middle of a room, you have to be able to walk through the room and the best way is to use a backtracking algorithm.
-Unfortunately, the concept of recursion was perhaps a little too far-reaching for me at the time and although I spent half my project on it, I couldn't implement it properly.
-Then we had to use SDL to make the program look prettier.

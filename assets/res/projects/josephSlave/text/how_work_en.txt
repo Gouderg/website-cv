@@ -1,8 +1,0 @@
-The bot works by executing the command written in a text channel.
-The bot analyses each message and if the message starts with an exclamation mark followed by a word it knows then it will process the line.
-The 3 most interesting commands are the following:
-<ul>
-    <li>!nasa -pic => This command uses an API provided by NASA. It returns an image of space with a small description. </li>
-    <li>!meteo Brest fr => This command uses the OpenWeather API. It gives weather characteristics of the selected city. </li>
-    <li>!play url_youtube => This command allows to play the sound of a YouTube video. The bot will connect to a voice channel and start playing the sound of the chosen video. </li>
-</ul>

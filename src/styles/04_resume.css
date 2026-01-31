@@ -1,0 +1,290 @@
+
+.timeline-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+    align-items: center;
+    margin: 2em;
+}
+
+.resume-icon {
+    border-left: solid 1px var(--grey-200);
+    border-top: solid 1px var(--grey-200);
+    border-radius: 15%;
+    padding: 0.5em;
+    box-shadow: 5px 5px 10px var(--grey-800);
+}
+
+.timeline-header-title {
+    font-weight: 600;
+    font-size: x-large;
+    font-family: 'Outfit';
+    color: var(--white-600);
+}
+
+.timeline-list {
+    list-style: none;
+    position: relative;
+    margin-left: 3.5em;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5em;
+}
+
+.timeline-item:not(:last-child):before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -2.5em;
+    width: 1px;
+    height: calc(100% + 5em);
+    background-color: var(--grey-100);
+}
+
+.timeline-item:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -2.6em;
+    height: 6px;
+    width: 6px;
+    background-color: var(--orange-100);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px hsl(0, 0%, 22%);
+}
+ 
+.ti-place {
+    font-weight: 600;
+    font-size: large;
+    font-family: 'Outfit';
+    color: var(--white-600);
+}
+
+.ti-title {
+    font-weight: 200;
+    font-size: small;
+    font-family: 'Inter';
+    color: var(--white-100);
+}
+
+.ti-date {
+    font-weight: 500;
+    font-size: small;
+    font-family: 'Inter';
+    color: var(--orange-100);
+}
+
+.tiep-post {
+    font-weight: 600;
+    font-size: large;
+    font-family: 'Outfit';
+    color: var(--white-600);
+}
+
+.tiep-entreprise {
+    font-weight: 200;
+    font-size: small;
+    font-family: 'Inter';
+    color: var(--white-100);
+}
+
+.tiep-date {
+    font-weight: 500;
+    font-size: small;
+    font-family: 'Inter';
+    color: var(--orange-100);
+}
+
+.tiep-place {
+    font-weight: 200;
+    font-size: small;
+    font-family: 'Inter';
+    color: var(--white-100);
+    font-style: italic;
+}
+
+.tiep-activities {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-size: small;
+    font-family: 'Inter';
+    color: var(--white-100);
+    padding-right: 1em;
+}
+
+.tiep-activities li:before {
+    content: "•";
+    color: var(--orange-100);;
+    font-weight: 700;
+    display: inline-block;
+    width: 1em;
+}
+
+.tiep-title {
+    font-weight: 200;
+    font-family: 'Outfit';
+    color: var(--white-100);
+}
+
+.tiep-expe {
+    font-size: small;
+    font-family: 'Inter';
+    color: var(--white-100);
+    font-style: italic;
+    font-weight:bold;
+}
+.tiep-activities li a {
+    text-decoration: none;
+    text-transform: none;
+    color: var(--orange-100);
+    animation: var(--animate-pulse);
+}
+
+.tiep-sep {
+    color: var(--orange-100);
+    width: 2em;
+}
+
+.ti-icon-external {
+    width: 18px;
+    vertical-align: middle;
+}
+
+.btn-cv {
+    align-self: flex-end;
+    margin: 2em 3em;
+    padding: 1em 2em;
+    color: var(--orange-100);
+    font-family: 'Outfit';
+    font-weight: 800;
+    border-left: solid 1px var(--grey-200);
+    border-top: solid 1px var(--grey-200);
+    border-radius: 1em;
+    box-shadow: 5px 5px 10px var(--grey-800);
+}
+
+.btn-cv img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.btn-cv:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .timeline-header {
+        margin: 1em;
+    }
+    
+    .resume-icon {
+        padding: 0.5em;
+        width: 12px;
+        z-index: 100;
+        background-color: var(--grey-500);
+    }
+
+    .timeline-header-title {
+        font-size: medium;
+    }
+
+    .timeline-list {
+        margin-left: 1.25em;
+    }
+
+    .timeline-item {
+        margin-bottom: 1.25em;
+    }
+
+    .timeline-item:not(:last-child):before {
+        top: -30px;
+        left: -1.8em;
+        width: 1px;
+        height: calc(100% + 4em);
+    }
+
+    .timeline-item:after {
+        top: 10px;
+        left: -1.95em;
+        height: 6px;
+        width: 6px;
+    }
+    
+    .ti-place {
+        font-size: small;
+    }
+
+    .ti-title {
+        font-size: x-small;
+    }
+
+    .ti-date {
+        font-size: x-small;
+    }
+
+    .tiep-post {
+        font-size: medium;
+    }
+
+    .tiep-entreprise {
+        font-size: x-small;
+    }
+
+    .tiep-date {
+        font-size: x-small;
+    }
+
+    .tiep-place {
+        font-size: x-small;
+    }
+
+    .tiep-activities {
+        padding: 0;
+        font-size: x-small;
+        padding-right: 1em;
+    }
+
+    .tiep-activities li:before {
+        width: 1em;
+    }
+
+    .tiep-title {
+        font-size: medium;
+        font-weight: 200;
+        font-family: 'Outfit';
+        color: var(--white-100);
+    }
+
+    .tiep-expe {
+        font-size: x-small;
+    }
+
+    .ti-icon-external {
+        width: 12px;
+        vertical-align: middle;
+    }
+
+    .btn-cv {
+        align-self: flex-end;
+        margin: 2em 3em;
+        padding: 1em 2em;
+        color: var(--orange-100);
+        font-family: 'Outfit';
+        font-weight: 600;
+        font-size: small;
+        border-left: solid 1px var(--grey-200);
+        border-top: solid 1px var(--grey-200);
+        border-radius: 1em;
+        box-shadow: 5px 5px 10px var(--grey-800);
+    }
+
+}

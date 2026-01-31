@@ -1,6 +1,0 @@
-La simulation simple d'une nuée se base sur 3 règles qui vont changer le comportement d'un individu en fonction de sa vitesse, de sa position et de ses compagnons proches.
-<ul>
-    <li> Séparation: se diriger pour éviter ses compagnons proches et ne pas rentrer en collision. </li>
-    <li> Alignement : se diriger vers la même direction moyenne des compagnons proches. </li>
-    <li> Cohésion: se dirige pour se mouvoir autour de la position moyenne des autres compagnons proches. </li>
-</ul>

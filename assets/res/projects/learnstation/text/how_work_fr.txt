@@ -1,6 +1,0 @@
-Le site se divise en 3 parties:
-<ul>
-    <li> Les pages statiques qui présentent les différents domaines lies aux bootcamps. </li>
-    <li> Un formulaire qui en fonction du lieu, du domaine et de la disponibilité de l'utilisateur, va lui proposer les bootcamps les plus proches et les plus adaptes à sa demande. </li>
-    <li> Un blog qui recense différents articles en fonction de catégorie. L'admin du site a la possibilité de rajouter des articles avec une url spéciale. </li>
-</ul>

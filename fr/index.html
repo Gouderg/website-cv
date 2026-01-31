@@ -1,202 +1,810 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Inspiration from https://aakashrajbanshi.com.np/ -->
+    <!-- ILLIEN Victor - 2026 -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ILLIEN Victor Portfolio</title>
+    <title>ILLIEN Victor | Portfolio</title>
 
-    <!-- Import CSS -->
-    <link href="../assets/css/color.css" rel="stylesheet">
-    <link href="../assets/css/font.css" rel="stylesheet">
-    <link href="../assets/css/header.css" rel="stylesheet">
-    <link href="../assets/css/footer.css" rel="stylesheet">
-    <link href="../assets/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/styles/00_base.css">
+    <link rel="stylesheet" href="../src/styles/01_main.css">
+    <link rel="stylesheet" href="../src/styles/02_side.css">
+    <link rel="stylesheet" href="../src/styles/03_header.css">
+    <link rel="stylesheet" href="../src/styles/04_resume.css">
+    <link rel="stylesheet" href="../src/styles/05_about.css">
+    <link rel="stylesheet" href="../src/styles/06_portfolio.css">
 
-    <!-- Import JS -->
-    <script type="text/javascript" src="../assets/js/header.js" defer></script>
-    <script type="text/javascript" src="../assets/js/footer.js" defer></script>
-    <script type="text/javascript" src="../assets/js/index.js" defer></script>
+    <script src="../src/js/header.js" defer></script>
+    <script src="../src/js/folio.js" defer></script>
 
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="../fr/" class="logo-lien">
-                <img class="logo-photo" src="../assets/res/img/logo.svg" alt="logo">
-                <h1 id='0' class="logo-text">ILLIEN Victor</h1>
+    <section id="side" class="side">
+        <div class="side-basic-info">
+            <div class="side-photo-container">
+                <img class="side-photo" src="../public/photo_profil.jpeg" alt="Photo de profil">
+            </div>
+            
+            <div class="side-info-container">
+                <span class="side-name">Victor ILLIEN</span>
+                <span class="side-job">Ingénieur Logiciel IA</span>
+            </div>
+    
+            <div id="side-arrow" class="side-arrow">
+                <img src="../public/icons/arrow-circle-down.svg" alt="Down Arrow">
+            </div>
+        </div>
+
+        <hr id="side-separation" class="side-separation" />
+
+        <div id="side-contacts" class="side-contacts">
+            <div class="side-email">
+                <div>
+                    <img class="side-contacts-icon" src="../public/icons/envelope.svg" alt="Mail Icon">
+                </div>
+                <div class="side-contact-container">
+                    <span class="side-contact-header">Email</span>
+                    <a class="side-contacts-text" target="_blank" href="mailto:victor.illien974@gmail.com">victor.illien974@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="side-phone">
+                <div>
+                    <img class="side-contacts-icon" src="../public/icons/phone-call.svg" alt="Phone Icon">
+                </div>
+                <div class="side-contact-container">
+                    <span class="side-contact-header">Téléphone</span>
+                    <a class="side-contacts-text" href="tel:+33766199954" target="_blank">+33766199954</a>
+                </div>
+            </div>
+            
+            <div class="side-location">
+                <div>
+                    <img class="side-contacts-icon" src="../public/icons/map-pin.svg" alt="Map Icon">
+                </div>
+                <div class="side-contact-container">
+                    <span class="side-contact-header">Location</span>
+                    <a class="side-contacts-text" href="https://www.google.com/maps/place/SaintDenis,+Reunion" target="_blank">Saint Denis, Réunion</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="side-container-icons" class="side-container-icons">
+            <a href="http://github.com/Gouderg" target="_blank">
+                <img src="../public/icons/github.svg" alt="Github Icon">
+            </a>
+            <a href="http://github.com/Gouderg" target="_blank">
+                <img src="../public/icons/brand-linkedin.svg" alt="LinkedIn Icon">
             </a>
         </div>
-        
-        <nav class="menu">
-            <li><a class="menu-text" id='1' href="../fr/workexperience.html">Expérience Pro</a></li>
-            <li><a class="menu-text" id='2' href="../fr/projects.html">Projets</a></li>
-        </nav>
-        
-        <div class="call">
-            <h1 class="language" onclick="changeLang('en')"> <span id="fr" class="active">FR</span> / <span id="en">EN</span></h1>
-        </div>
-        <a id="icon-menu-burger" class="menu-burger" onclick="unrollMenu()">&#9776;</a>
-    </header>
-    <!-- Section use to the burger menu -->
-    <section id="responsive-menu" class="resp-menu">
-        <nav class="resp-nav">
-            <li>
-                <a class="resp-menu-item" id='11' href="../fr/workexperience.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
-                    <span class="resp-menu-text">Expérience Pro</span>
-                </a>
-            </li>
-            <li>
-                <a class="resp-menu-item" id='22' href="../fr/projects.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>
-                    <span class="resp-menu-text">Projets</span>
-                </a>
-            </li>
-        </nav>
     </section>
-    <main>
-        <!-- First section. -->
-        <section class="presentation">
-            <div class="presentation-left">
-                <div class="presentation-left-pres">
-                    <p>Je suis <span class="pres-bold">ILLIEN Victor,<br>Étudiant ISEN<br><span class="pres-under">Ingénieur Informatique</span></span></p>
-                </div>
-                <div class="presentation-left-desc">
-                    <p>Je suis un étudiant passionné par la programmation et tout ce qui touche à l’intelligence artificielle.</p>
-                </div>
-                <div class="button-main">
-                    <a class="button-main-lien" href="https://www.linkedin.com/in/victor-illien-5b10031b2/" target="_blank">Embauchez-moi</a>
-                </div>
-
-            </div>
-            <div class="presentation-right">
-                <img src="../assets/res/img/photo_profil3.jpg" alt="photo-profil" class="pp">
-            </div>
-        </section>
-        
-        <!-- Intersection -->
-        <div class="arrow">
-            <img src="../assets/res/img/svg-menu/down-arrow-blue.png" alt="down-arrow" class="arrow-img" onclick="goTo('hire')">
+    <section class="main-section">
+        <div class="main-header">
+            <ul class="main-header-ul">
+                <li id="about_header" class="main-header-li">À Propos</li>
+                <li id="resume_header" class="main-header-li">CV</li>
+                <li id="portfolio_header" class="main-header-li">Portfolio</li>
+                <li class="main-header-li"><a href="../en/index.html">🇬🇧</a></li>
+            </ul>
         </div>
-
-        <!-- Second section -->
-        <section id="hire" class="should-hire-me">
-            <h1 class="title-hire"><span class="highlight">Pourquoi</span> m'embaucher ?</h1>
-            <div class="studies">
-                <ul class="sub-title-hire"><li><h1>Mes <span class="highlight">É</span>tudes</h1></li></ul>
-                <p class="sub-para">
-                    Je suis actuellement en 5e année d'école d'ingénieur à l'ISEN YNCREA OUEST à Brest. Mes 3 premières années étaient consacrées au cursus de base d'un ingénieur. J'ai pu découvrir l'électronique sur des systèmes embarqués. De plus, j'étais dans une filière spéciale, qui sur l'ensemble de ses trois ans m'a donné un bagage de développeur Full Stack.
-                    Durant mes deux dernières années, je vais me spécialiser dans le domaine de l'intelligence artificielle.
+        
+        <section id="about" class="section-container">
+            <div class="main-section-header">
+                <span class="main-section-title">À Propos</span>
+                <hr class="main-section-separation">
+            </div>
+  
+            <div>
+                <p class="main-text">
+                   Passionné par l'ingénierie numérique et l'innovation technique, j'évolue à la croisée du matériel et du logiciel. 
+                   De la conception de systèmes embarqués à l'entraînement de modèles d'intelligence artificielle, je développe des solutions full-stack complètes. 
+                   Mon objectif est simple : transformer des flux de données complexes en interfaces web performantes, élégantes et porteuses de sens.
                 </p>
-                <div class="button-resume">
-                    <a class="button-resume-lien" href="../assets/res/pdf/cv_ILLIEN_fr.pdf" target="_blank">Mon CV</a>
+                    
+            </div>
+
+            <span class="about-title">Domaines d'expertise</span>
+            <div class="about-domaine">
+                <div class="about-card">
+                    <img class="about-card-icon" src="../public/icons/computer_vision.svg" alt="Computer Vision Icon">
+                    <div class="about-card-container">
+                        <span class="about-card-title">Intelligence artifielle</span>
+                        <p class="about-card-text">Fine-tuning de modèles multilabel, classification et segmentation d'images.</p>
+                    </div>
+                </div>
+                <div class="about-card">
+
+                    <img class="about-card-icon" src="../public/icons/fullstack.svg" alt="FullStack Icon">
+                    <div class="about-card-container">
+                        <span class="about-card-title">Développement Web</span>
+                        <p class="about-card-text">Création d'applications full-stack.</p>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <img class="about-card-icon" src="../public/icons/big_data.svg" alt="Data Icon">
+                    <div class="about-card-container">
+                        <span class="about-card-title">Data Management</span>
+                        <p class="about-card-text">Traitement et normalisation de données massives (<a class="about-link" href="https://doi.org/10.5281/zenodo.11125847" target="_blank" rel="noopener noreferrer">Seatizen Atlas</a>).</p>
+                    </div>    
+                </div>
+                <div class="about-card">
+                    <img class="about-card-icon" src="../public/icons/electronic.svg" alt="Electronic Icon">
+                    <div class="about-card-container">
+                        <span class="about-card-title">Électronique & IoT</span>
+                        <p class="about-card-text">Conception et contrôle de systèmes embarqués autonomes.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Intersection -->
-            <div class="arrow">
-                <img src="../assets/res/img/svg-menu/down-arrow-blue.png" alt="down-arrow" class="arrow-img" onclick="goTo('skills')">
+
+            <span class="about-title">Stack Technique</span>
+            <div class="about-stacks">
+                <div class="about-stack">
+                    <span>Front-End</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/next.svg" alt="NextJS Icon" title="NextJS">
+                        <img class="about-stack-icon" src="../public/icons/skills/tailwind.svg" alt="TailWind Icon" title="TailwindCSS">
+                        <img class="about-stack-icon" src="../public/icons/skills/ts.svg" alt="TS Icon" title="TypeScript">
+                    </div>
+                </div>
+                <div class="about-stack">
+                    <span>Back-End</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/symfony.svg" alt="Symfony Icon" title="Symfony">
+                        <img class="about-stack-icon" src="../public/icons/skills/fastapi.svg" alt="FastAPI Icon" title="FastAPI">
+                        <img class="about-stack-icon" src="../public/icons/skills/flask.svg" alt="Flask Icon" title="Flask">
+                        <img class="about-stack-icon" src="../public/icons/skills/nodejs.svg" alt="NodeJS Icon" title="NodeJS">
+                    </div>
+                </div>
+                <div class="about-stack">
+                    <span>Software</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/python.svg" alt="Python Icon" title="Python">
+                        <img class="about-stack-icon" src="../public/icons/skills/c++.svg" alt="C++ Icon" title="C++">
+                        <img class="about-stack-icon" src="../public/icons/skills/c.svg" alt="C Icon" title="C">
+                    </div>
+                </div>
+                <div class="about-stack">
+                    <span>OS/MCU</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/ubuntu.svg" alt="Ubuntu Icon" title="Ubuntu">
+                        <img class="about-stack-icon" src="../public/icons/skills/arduino.svg" alt="Arduino Icon" title="Arduino">
+                        <img class="about-stack-icon" src="../public/icons/skills/raspberry.svg" alt="Raspberry Icon" title="Raspberry">
+                    </div>
+                </div>
+                <div class="about-stack">
+                    <span>Serveur</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/nginx.svg" alt="Nginx Icon" title="Nginx">
+                        <img class="about-stack-icon" src="../public/icons/skills/apache.svg" alt="Apache Icon" title="Apache">
+                        <img class="about-stack-icon" src="../public/icons/skills/docker.svg" alt="Docker Icon" title="Docker">
+                    </div>
+                </div>
+                <div class="about-stack">
+                    <span>Database</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/mysql.svg" alt="MySQL Icon" title="MySQL">
+                        <img class="about-stack-icon" src="../public/icons/skills/sqlite.svg" alt="Sqlite Icon" title="SQLite">
+                        <img class="about-stack-icon" src="../public/icons/skills/postgresql.svg" alt="postgresql Icon" title="PostgreSQL">
+                    </div>
+                </div>
+                <div class="about-stack">
+                    <span>Outils & Design</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/QGIS.svg" alt="Qgis Icon" title="QGIS">
+                        <img class="about-stack-icon" src="../public/icons/skills/figma.svg" alt="Figma Icon" title="Figma">
+                    </div>
+                </div>
             </div>
 
-            <div id="skills" class="skills">
-                <ul class="sub-title-hire"><li><h1>Mes <span class="highlight">S</span>kills</h1></li></ul>
-                <div class="skills-container">
-                    <div>
-                        <h3>Front-end</h3>
-                        <div class="skills-img">
-                            <img src="../assets/res/img/svg-skills/html.svg" alt="icon-html" title="html">
-                            <img src="../assets/res/img/svg-skills/css.svg" alt="icon-css" title="css">
-                            <img src="../assets/res/img/svg-skills/js.svg" alt="icon-js" title="js">
-                            <img src="../assets/res/img/svg-skills/react.svg" alt="icon-react" title="react">
+        </section>
+
+        <section id="resume" class="section-container">
+            <div class="main-section-header">
+                <span class="main-section-title">CV</span>
+                <hr class="main-section-separation">
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-header">
+                    <img class="resume-icon" src="../public/icons/book-open.svg" alt="Education Icon">
+                    <span class="timeline-header-title">Education</span>
+                </div>
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                        <span class="ti-place">ISEN YCREA OUEST, Brest</span>
+                        <span class="ti-title">Diplôme d'ingénieur en Traitement du Signal spécialité Intelligence Artificielle</span>
+                        <span class="ti-date">2018 — 2023</span>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="ti-place">Lycée Levavasseur, Ile de la Réunion</span>
+                        <span class="ti-title">Baccalauréat Scientifique SI spé ISN</span>
+                        <span class="ti-date">2018</span>
+                    </li>
+                </ol>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-header">
+                    <img class="resume-icon" src="../public/icons/circuitry.svg" alt="Experience Icon">
+                    <span class="timeline-header-title">Expériences</span>
+                </div>
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                        <span class="tiep-post">Ingénieur BioInformatique — Lead Développeur</span>
+                        <span class="tiep-entreprise">Ifremer Délégation Océan Indien</span>
+                        <span class="tiep-date">Oct, 2023 — Déc 2025</span>
+                        <span class="tiep-place">Le Port, Ile de la Réunion</span>
+                        <ul class="tiep-activities">
+                            <li>Création d’une chaîne de traitement pour 15 To de données (2,6 millions d’images) de l’acquisition à la diffusion en utilisant les normes OGC, DarwinCore, et les principes FAIR.</li>
+                            <li>Aggrégation de données halieutiques des bases IOSSS/FLOPPED/GERMON/DMX/POPSICLE.</li>
+                            <li>Conception d’applications et de serveurs (Next.js, FastAPI, Dash) pour visualisation des données.</li>
+                            <li>Fine-tuning multilabel pour la classification/segmentation automatisée des taxons et substrats marins.</li>
+                            <li>Conception et contrôle d’un catamaran autonome pour le prélèvement d’ADNe. (Projet Popsicle)</li>
+                            <li>Maintenance et déploiement d’un ASV pour l’acquisition de données marines. (Projet Plancha)</li>
+                        </ul>
+                        <hr class="tiep-sep">
+                        <span class="tiep-title">Récompenses</span>
+                        <ul class="tiep-activities">
+                            <li><b>Prix Science Ouverte des Données de la Recherche (Team Award)</b><br>
+                            Issued by Ministère de l’Enseignement Supérieur, de la Recherche et de l’Espace, December 2025<br>
+                            Project: "Seatizen - Données d’imagerie des écosystèmes coralliens", <a href="https://www.enseignementsup-recherche.gouv.fr/fr/remise-des-prix-science-ouverte-edition-2025-100469" target="_blank" rel="noopener noreferrer"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a> </li>
+                        </ul>
+                        <hr class="tiep-sep">
+                        <span class="tiep-title">Publications</span>
+                        <ul class="tiep-activities">
+                            <li><b>The Point is the Mask: Scaling coral reef segmentation with weak supervision</b> M. Contini, <b>V. Illien</b>, <i> al. Proceedings of the IEEE/CVF International Conference on Computer Vision, 2025, <a rel="noopener noreferrer" target="_blank" href="https://openaccess.thecvf.com/content/ICCV2025W/CVAUI%20%26%20AAMVEM/html/Contini_The_point_is_the_mask_scaling_coral_reef_segmentation_with_ICCVW_2025_paper.html"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a></i></li>
+                            <li><b>From underwater to drone: A novel multi-scale knowledge distillation approach for coral reef monitoring</b> M. Contini, <b>V. Illien</b>, <i>et al. Ecological Informatics</i>, 2025, <a rel="noopener noreferrer" target="_blank" href="https://doi.org/10.1016/j.ecoinf.2025.103149"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a> </li>
+                            <li><b>Seatizen Atlas: a collaborative dataset of underwater and aerial marine imagery</b> M. Contini, <b>V. Illien</b>, <i>et al. Scientific Data</i>, 2025, <a rel="noopener noreferrer" target="_blank" href="https://doi.org/10.1038/s41597-024-04267-z"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a></li>
+                        </ul>
+                        <hr class="tiep-sep">
+                        <span class="tiep-title">Séminaires</span>
+                        <ul class="tiep-activities">
+                            <li>École Bridges x DATA TERRA 2025, 
+                                <a href="https://www.bridges-wio.com/fr/2026/01/13/ecoles-bridges-x-data-terra-une-premiere-edition-a-la-reunion-en-decembre-2025/" target="_blank" rel="noopener noreferrer">
+                                    <img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon">
+                                </a>
+                            </li>
+                            <li>Rencontres géomatique de la réunion 2024, <a href="https://www.youtube.com/watch?v=ZKwCdhyOxas" target="_blank" rel="noopener noreferrer"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a></li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Développeur Full Stack — Alternance</span>
+                        <span class="tiep-entreprise">CERVVAL</span>
+                        <span class="tiep-date">Oct. 2022 — Sept. 2023</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">Logiciel de commande de service pour la RATP.</span>
+                        <ul class="tiep-activities">
+                            <li>Evolution au sein d'une équipe Agile de 7 personnes.</li>
+                            <li>Prise en main d'un framework TypeScript interne et d'un logiciel ayant 2 ans de développement.</li>
+                            <li>Optimisation globale de l'architecture logicielle (ajout de fonctionnalités Fullstack).</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Développeur — Stage technique M1</span>
+                        <span class="tiep-entreprise">CIIRC Czech Technical University</span>
+                        <span class="tiep-date">Oct. — Aou. 2022</span>
+                        <span class="tiep-place">Prague, République Tchèque</span>
+                        <span class="tiep-expe">Amélioration d'un système d'eye-tracking basée sur des réseaux de neurones.</span>
+                        <ul class="tiep-activities">
+                            <li>Entraînement et inférence avec l’architecture Nvgaze.</li>
+                            <li>Installation de l’environnement de développement Nvidia TensorRT depuis un disque vierge.</li>
+                            <li>Optimisation de l’inférence à toutes les étapes (flux vidéo, prédictions, écriture).</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Projet M1</span>
+                        <span class="tiep-entreprise">ISEN YNCREA OUEST</span>
+                        <span class="tiep-date">Jan. — Avr. 2022</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">Mise en place d'un système de monitoring énergétique pour un SMEn ISO 50001.</span>
+                        <ul class="tiep-activities">
+                            <li>Conception de modules Arduino intégrant des capteurs de courants, tensions, températures et luminosités.</li>
+                            <li>Implémentation d'une communication radio entre les modules Arduino et une Raspberry Pi pour la collecte et le stockage centralisé des données.</li>
+                            <li>Configuration de la Raspberry Pi en point d'accès (hot-spot) et développement d'une interface web interactive pour monitorer les capteurs et visualiser les données en temps réel.</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Tutorat pour la formation simplon de Microsoft</span>
+                        <span class="tiep-entreprise">ISEN YNCREA OUEST</span>
+                        <span class="tiep-date">Jan. — Mai. 2021-22</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">60 heures de tutorat pour plusieurs adultes en reconversion durant 2 années consécutives.</span>
+                        <ul class="tiep-activities">
+                            <li>Accompagnement et explication sur les bases de Python et MySQL/MongoDB</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Site Wordpress pour une brasserie</span>
+                        <span class="tiep-entreprise">Storlok</span>
+                        <span class="tiep-date">Mar. — Mai. 2021</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">Création d'un site pour une brasserie dans le Finistère.</span>
+                        <ul class="tiep-activities">
+                            <li>Découverte du CMS Wordpress.</li>
+                            <li>Déploiement et gestion du nom de domaine.</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Première participation à l'Actinspace</span>
+                        <span class="tiep-entreprise">ActInSpace</span>
+                        <span class="tiep-date">Novembre 2021</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">Pendant un week-end, j'ai travaillé sur le projet MoonRover dont le but était de trouver de l'eau sur la lune en collaboration avec 3 participants.</span>
+                    </li>
+                </ol>
+            </div>
+
+            <a href="../public/pdf/cv_ILLIEN.pdf" download="cv_ILLIEN_VICTOR" class="btn-cv">
+                <img src="../public/icons/file-pdf.svg" alt="File Pdf Icon">
+                Télécharger mon CV
+            </a>
+        </section>
+
+        <section id="portfolio" class="section-container">
+            <div class="main-section-header">
+                <span class="main-section-title">Portfolio</span>
+                <hr class="main-section-separation">
+            </div>
+            <div class="portfolio">
+                <ul id="folio_header" class="portfolio-header">
+                    <li id="folio-all" class="portfolio-header-active">All</li>
+                    <li id="folio-ifremer">Ifremer</li>
+                    <li id="folio-web">Développement Web</li>
+                    <li id="folio-software">Software</li>
+                </ul>
+
+                <div id="projects_section" class="projects">
+                    
+                     <div data-tag="web" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/appbroccoli.png" alt="App Broccoli">
+                                <div class="project-back">
+                                    <p>Générateur de données CSV et SQL. Réalisé en PHP. </p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/app-broccoli" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="project-title">App Broccoli</span>
+                            <span class="project-category">Développement Web</span>
                         </div>
                     </div>
-                    <div>
-                        <h3>Back-end</h3>
-                        <div class="skills-img">
-                            <img src="../assets/res/img/svg-skills/php.svg" alt="icon-php" title="php">
-                            <img src="../assets/res/img/svg-skills/symfony.svg" alt="icon-symfony" title="symfony">
-                            <img src="../assets/res/img/svg-skills/mysql.svg" alt="icon-mysql" title="mysql">
-                            <img src="../assets/res/img/svg-skills/mongodb.svg" alt="icon-mongodb" title="mongodb">
+
+
+                    <div data-tag="web;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/seatizenmonitoring.jpg" alt="Seatizen Monitoring">
+                                <div class="project-back">
+                                    <p>Website NextJS pour explorer, visualiser et télécharger des données de Seatizen Atlas.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://seatizenmonitoring.ifremer.re/" target="_blank"rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/website-orange.svg" alt="Website"></a>
+                                        <a href="https://github.com/SeatizenDOI/seatizen-monitoring" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Seatizen Monitoring</span>
+                            <span class="project-category">Développement Web</span>
                         </div>
                     </div>
-                    <div>
-                        <h3>Logiciels</h3>
-                        <div class="skills-img">
-                            <img src="../assets/res/img/svg-skills/c.svg" alt="icon-c" title="C">
-                            <img src="../assets/res/img/svg-skills/c++.svg" alt="icon-c++" title="C++">
-                            <img src="../assets/res/img/svg-skills/python.svg" alt="icon-python" title="python">
-                            <img src="../assets/res/img/svg-skills/java.svg" alt="icon-java" title="java">
-                        </div> 
-                    </div>
-                    <div>
-                        <h3>OS & MCU</h3>
-                        <div class="skills-img">
-                            <img src="../assets/res/img/svg-skills/ubuntu.svg" alt="icon-ubuntu" title="Ubuntu">
-                            <img src="../assets/res/img/svg-skills/windows.svg" alt="icon-c++" title="Windows">
-                            <img src="../assets/res/img/svg-skills/raspberry.svg" alt="icon-raspberry" title="Raspberry Pi">
-                            <img src="../assets/res/img/svg-skills/arduino.svg" alt="icon-arduino" title="Arduino">
-                        </div> 
-                    </div>
-                </div>
-                <div class="skills-website">
-                    <h3>Siteweb que j'utilise pour améliorer ma logique et ma pratique du langage python.</h3>
-                    <div class="website-container">
-                        <a href="https://adventofcode.com/" target="_blank">
-                            <figure>
-                                <img src="../assets/res/img/svg-skills/Advent_Of_Code_Logo.png" alt="aoc" title="aoc" class="website-container-img">
-                                <figcaption>Advent of code</figcaption>
-                            </figure>
-                        </a>
-                        <a href="https://www.hackerrank.com/gouderg" target="_blank">
-                            <figure>
-                                <img src="../assets/res/img/svg-skills/HackerRank_logo.png" alt="hackerrank" title="hackerrank" class="website-container-img">
-                                <figcaption>Hackerrank</figcaption>
-                            </figure>
-                        </a>
-                        <a href="https://pydefis.callicode.fr/user/mhof/Groderg/7416186026f95e4a" target="_blank">
-                            <figure>
-                                <img src="../assets/res/img/svg-skills/callicode-logo.png" alt="pydefi" title="pydefi" class="website-container-img">
-                                <figcaption>Pydefi</figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Intersection -->
-            <div class="arrow">
-                <img src="../assets/res/img/svg-menu/down-arrow-blue.png" alt="down-arrow" class="arrow-img" onclick="goTo('motivation')">
-            </div>
+                    <div data-tag="software;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/zenodo-tools.jpg" alt="Zenodo Tools">
+                                <div class="project-back">
+                                    <p>Outils python pour envoyer une session seatizen sur Zenodo. </p>
+                                    <div class="project-back-icons">
+                                        <a href="https://docs.ifremer.re/zenodo/zenodo-tools/" target="_blank"rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/website-orange.svg" alt="Website"></a>
+                                        <a href="https://github.com/SeatizenDOI/zenodo-tools" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
 
-            <div id="motivation" class="motivation">
-                <ul class="sub-title-hire"><li><h1>Ma <span class="highlight">M</span>otivation</h1></li></ul>
-                <p class="sub-para">
-                    De nature curieuse, je cherche perpétuellement à m'améliorer notamment avec des projets personnels sur différents thèmes et langages.
-                    De plus, j'ai réalisé des projets professionnels pour la junior entreprise de mon école. Cela m'a permis de me confronter aux attentes des clients.
-                </p>
-                <div class="button-discover">
-                    <a class="button-discover-lien more-space" href="../fr/projects.html">Découvrez mes projets</a>
+                                </div>
+                            </div>
+                            <span class="project-title">Zenodo Tools</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/dinovdeau.jpg" alt="Dinovdeau">
+                                <div class="project-back">
+                                    <p> Code pour l'entraînement de DinoVd'eau, un modèle de classification multilabel d'images sous-marines. </p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/SeatizenDOI/DinoVdeau" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">DinoVd'eau</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/plancha.JPG" alt="Plancha">
+                                <div class="project-back">
+                                    <p> Code pour traîter les données brutes d'un ASV seatizen. </p>
+                                    <div class="project-back-icons">
+                                        <a href="https://doi.org/10.5281/zenodo.15291312" target="_blank"rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/website-orange.svg" alt="Website"></a>
+                                        <a href="https://github.com/SeatizenDOI/plancha-workflow" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Plancha</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="web;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/popsicle.jpg" alt="Popsicle">
+                                <div class="project-back">
+                                    <p> Website NextJS pour l'échantillonage du Variola Louti à la Réunion. </p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/SeatizenDOI/popsicle" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Popsicle</span>
+                            <span class="project-category">Développement Web</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/the-point-is-the-mask.jpg" alt="The Point Is The Mask">
+                                <div class="project-back">
+                                    <p> The point is the mask: scaling coral reef segmentation with weak supervision  </p>
+                                    <div class="project-back-icons">
+                                        <a href="https://openaccess.thecvf.com/content/ICCV2025W/CVAUI%20%26%20AAMVEM/html/Contini_The_point_is_the_mask_scaling_coral_reef_segmentation_with_ICCVW_2025_paper.html" target="_blank"rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/website-orange.svg" alt="Website"></a>
+                                        <a href="https://github.com/SeatizenDOI/the-point-is-the-mask" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">The Point is the mask</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/cog-server.jpg" alt="Cog Serveur">
+                                <div class="project-back">
+                                    <p> Code pour servir des rasters issues des sessions seatizen.  </p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/SeatizenDOI/cog-server" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Cog Server</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/aoc.png" alt="AOC">
+                                <div class="project-back">
+                                    <p> Mes solutions en python pour l'Advent Of Code.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://adventofcode.com/" target="_blank"rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/website-orange.svg" alt="Website"></a>
+                                        <a href="https://github.com/Gouderg/advent-of-code" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Advent Of Code</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/boids.png" alt="Boids">
+                                <div class="project-back">
+                                    <p>Boids est un programme de vie artificielle développé par Craig Reynolds en 1986, qui simule le comportement des nuées des oiseaux. (C++)</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/Boids" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Boids</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/doublependule.png" alt="Double Pendule">
+                                <div class="project-back">
+                                    <p>Utilisation du C++ pour simuler des systèmes physiques avec du code</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/dynamic-simulation" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="project-title">Simulations Dynamiques</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+                    
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/fractal.png" alt="Fractal">
+                                <div class="project-back">
+                                    <p>Simulation de fractales en C++</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/fractal-simulation" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="project-title">Simulation de fractales</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/jeudelavie.png" alt="Jeu de la Vie">
+                                <div class="project-back">
+                                    <p>Mon implémentation du Jeu de la Vie en Python.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/jeuDeLaVie" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Jeu de la Vie</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+                    
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/puissance4.png" alt="Puissance 4">
+                                <div class="project-back">
+                                    <p>Implémentation en Python d'un solveur de tictactoe, Puissance 4 et de sudoku.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/JosephIA" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Joseph IA</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="web" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/learnstation.png" alt="Learn Station">
+                                <div class="project-back">
+                                    <p>Website développé en Symfony. Référenceur de bootcamp.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Learn-Station/learn-station" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Learn Station</span>
+                            <span class="project-category">Développement Web</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/maze.png" alt="Maze">
+                                <div class="project-back">
+                                    <p>Solveur de labyrinthe fait en C en première année d'école d'ingénieur.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/ProjetC-2019-CIR1" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Maze Solver</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="web" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/presurized_octopus.jpg" alt="presurized_octopus">
+                                <div class="project-back">
+                                    <p>Website en Symfony et React pour calculer les paliers de décompression en plongée.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/pressurized-octopus" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Pressurized Octopus</span>
+                            <span class="project-category">Développement Web</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/sortsound.png" alt="Sort Sound">
+                                <div class="project-back">
+                                    <p>Interface en C++ pour visualiser les algorithmes de tris avec du son.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/sort-sound" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Sort Sound</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="web" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/wavespainting.png" alt="wavespainting">
+                                <div class="project-back">
+                                    <p>Interface qui implémente l'algorithme de waves-function-collapse en JS.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/waves-drawing" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Waves painting</span>
+                            <span class="project-category">Développement Web</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/nnfs.png" alt="nnfs">
+                                <div class="project-back">
+                                    <p>Implémentation du livre NNFS en C++.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/neuralib" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Neuralib</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/ants.png" alt="Ants">
+                                <div class="project-back">
+                                    <p>Un essai pour imiter les algos de fourmis en C++.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/Ants-colony" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Ants Colony</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/donut.gif" alt="Donut">
+                                <div class="project-back">
+                                    <p>Simulation d'un donut dans le terminal en Rust.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/donut2D" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Donut 2D</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/salesman.png" alt="salesman">
+                                <div class="project-back">
+                                    <p>Résolution du problème du voyageur avec un algorithme génétique en Python.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/donut2D" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Salesman Ag</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
-        
-        <div class="arrow-up">
-            <img src="../assets/res/img/svg-menu/down-arrow-blue.png" alt="down-arrow" class="arrow-img" onclick="backToTop()">
-        </div>
-        
-        
-    </main>
-    <footer class="footer">
-        <div class="icons">
-            <div id="validate" class="validate-box">
-                <span class="validate-message">Copié !</span>
-            </div>
-            <img class='icon' src="../assets/res/img/svg-footer/whitediscord.svg" alt="discord" onclick="copyDiscord()" title="gouderg#5425">
-            <a href="https://www.linkedin.com/in/victor-illien-5b10031b2/"><img class='icon' src="../assets/res/img/svg-footer/LinkedINlinkldin.svg" alt="linkdlin"></a>
-            <a href="https://github.com/Gouderg"><img class='icon' src="../assets/res/img/svg-footer/whitegithub.svg" alt="github"></a>
-            <img class='icon' src="../assets/res/img/svg-footer/whitegmail.svg" alt="gmail" onclick="copyGmail()" title="victor.illien974@gmail.com">
-        </div>
-        <div class="copyright"> <a href="../fr/mentions_legal.html">Copyright © 2023</a></div>
-    </footer>
+    </section>
 </body>
 </html>

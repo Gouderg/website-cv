@@ -1,3 +1,0 @@
-For example:
-<br>
-<img src="../assets/res/projects/aoc/img/exemple.png" class="png-explanation" />

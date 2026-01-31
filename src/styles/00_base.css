@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Outfit:wght@200;400;600;700;800&display=swap');
+
+@keyframes pulse {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(2px, -2px) rotate(1deg); }
+  50% { transform: translate(-2px, 2px) rotate(-1deg); }
+  75% { transform: translate(2px, 2px) rotate(1deg); }
+  100% { transform: translate(0, 0); }
+}
+
+
+:root {
+    --white-100: #ffffff;
+    --white-200: #fcfcfc;
+    --white-300: #fafafa;
+    --white-400: #f7f7f8;
+    --white-500: #f2f2f3;
+    --white-600: #eeeeef;
+    --white-700: #e9e9eb;
+    --white-800: #e4e4e6;
+    --white-900: #dfdfe1;
+
+    --grey-100: #3a3a3b;
+    --grey-200: #333334;
+    --grey-300: #2c2c2d;
+    --grey-300-80: #2c2c2dce;
+    --grey-400: #252526;
+    --grey-500: #1e1e1f; 
+    --grey-600: #1a1a1b;
+    --grey-700: #161617;
+    --grey-800: #121213;
+    --grey-900: #0d0d0e;
+    --grey-800-50: #121213e7;
+
+
+    --orange-100: #f7b36f;
+    --orange-200: #f5a956;
+    --orange-300: #f4a03e;
+    --orange-400: #f39632;
+    --orange-500: #f28c26; 
+    --orange-600: #da7e22;
+    --orange-700: #c2701e;
+    --orange-800: #aa621a;
+    --orange-900: #915416;
+
+    --main-transition: all ease-in-out 0.5s;
+    --animate-pulse: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --animate-bounce: bounce 1s infinite;
+    --animate-shake: shake 0.2s infinite;
+}
+
+h1, h2, h3 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--orange-500);
+    font-weight: 800;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(var(--grey-800), var(--grey-700)) ;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+    padding: 2em;
+    transition: all ease-in-out 0.5s;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+@media (max-width: 1250px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }   
+}

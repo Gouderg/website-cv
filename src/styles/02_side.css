@@ -1,0 +1,237 @@
+.side {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-500);
+    align-items: center;
+    color: var(--white-400);
+    width: auto;
+    padding: 4em 3em 2em 3em;
+    gap: 1em;
+    border: solid 1px var(--grey-100);
+    border-radius: 2em;
+    transition: var(--main-transition);
+    position: sticky;
+    top: 2em;
+}
+
+.side-arrow {
+    display: none;
+}
+
+.side-photo {
+    width: 10em;
+    border-radius: 15%;
+    overflow: hidden;
+}
+
+
+.side-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.side-name {
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.side-job{
+    font-size: 0.8em;
+    padding: 0.30em 1.5em;
+    background-color: var(--grey-200);
+    color: var(--white-900);
+    font-family: 'Inter';
+    border-radius: 0.5em;
+}
+
+.side-separation {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: var(--grey-100);
+}
+
+.side-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow: hidden;
+}
+
+.side-email, .side-location, .side-phone {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+.side-contact-header {
+    font-family: 'Inter';
+    font-weight: 200;
+    color: var(--white-100);
+    font-size: 0.8em;
+}
+
+.side-contacts-text {
+    font-family: 'Inter';
+    font-weight: 400;
+    color: var(--white-900);
+    font-size: 0.8em;
+}
+
+
+.side-contacts-icon {
+    width: 1.2em;
+    border-left: solid 1px var(--grey-200);
+    border-top: solid 1px var(--grey-200);
+    border-radius: 15%;
+    padding: 0.5em;
+    margin-right: 20px; 
+    box-shadow: 5px 5px 10px var(--grey-800);
+}
+
+.side-contacts-icon:hover {
+  animation: var(--animate-shake); 
+  transform: scale(1.2);
+}
+
+.side-contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-container-icons {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.side-show {
+    display: flex !important;
+}
+
+.side-max-width-min-content {
+    max-width: min-content;
+}
+
+.side-min-width-max-content {
+    min-width: max-content;
+}
+
+@media (max-width: 1250px) {
+    
+    .side {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 950px;
+        padding: 0em;
+        min-height: 10em;
+        margin-bottom: 2em;
+    }
+
+    .side-basic-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .side-photo {
+        width: 7em;
+        margin: 2em
+    }
+
+    .side-contacts {
+        margin: 1em 2em;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vh;
+    }
+
+    .side-separation {
+        width: 70%;
+    }
+
+    .side-container-icons {
+        margin: 1em 2em;
+        justify-content: center;
+        width: 100vh;
+    }
+
+    .side-contacts, .side-separation, .side-container-icons {
+        display: none;
+    } 
+    
+    .side-arrow {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        padding: 2em;
+    }
+
+    .side-arrow:hover {
+        cursor: pointer;
+    }
+
+    .side-arrow img {
+        animation: var(--animate-bounce);
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .side {
+        width: 700px;
+    }
+
+    .side-contacts {
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+
+    .side-container-icons {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .side {
+        width: 520px;
+    }
+}
+
+@media (max-width: 580px) {
+    .side {
+        width: 100%;
+    }
+
+    .side-photo {
+        width: 5em;
+        margin: 1em;
+    }
+
+    .side-info-container {
+        align-items: flex-start;
+    }
+
+    .side-name {
+        font-family: 'Outfit';
+        font-weight: 700;
+        font-size: 0.8em;
+    }
+
+    .side-job{
+        font-size: 0.6em;
+        padding: 0.30em 1.5em;
+        background-color: var(--grey-200);
+        color: var(--white-900);
+        font-family: 'Inter';
+        border-radius: 0.5em;
+    }
+}

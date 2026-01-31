@@ -1,1 +1,0 @@
-Implementation of the wavefunction collapse algorithm. The goal was to be able to draw different geometric shapes with predefined patterns and rules.

@@ -1,1 +1,0 @@
-JosephIA est une petite intelligence artificielle qui joue contre un utilisateur au puissance 4 et au tictactoe. Il peut aussi résoudre un sudoku.

@@ -1,1 +1,0 @@
-L'Avent of code est un calendrier de l'Avent composé de petites énigmes de programmation pour une variété de compétences et de niveaux de compétence qui peuvent être résolues dans n'importe quel langage de programmation.

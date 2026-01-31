@@ -1,4 +1,0 @@
-You must have on your machine:
-<ul><li>python3</li></ul>
-
-You must go to the desired directory and execute the desired script.

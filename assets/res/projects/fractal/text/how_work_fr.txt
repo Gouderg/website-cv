@@ -1,2 +1,0 @@
-Ce petit programme vous propose de regarder la génération d'une Koch Curve qui avec le temps consomme beaucoup de ressource.
-On peut aussi observer le fractal de Mandelbrot ou bien le Fractal de Julia avec un paramètre spécifique.

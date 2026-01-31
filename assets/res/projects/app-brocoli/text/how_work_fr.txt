@@ -1,7 +1,0 @@
-Le site se décompose en 4 parties:
-<ul>
-    <li>La page d'accueil demande le nombre de lignes à générer, le nom de la table et le nom du modèle. Ensuite, on choisit le nombre de types de champs qu'on veut.</li>
-    <li>La page de génération de données permet de remplir les champs précédemment sélectionnés. On peut choisir quel type de fichier on veut et on peut sauvegarder le modèle pour une prochaine utilisation D'abord, on génère les données avec le bouton générer, un aperçu des données générer apparaît dans la console en dessous. Ensuite, on peut télécharger le fichier ou non.</li>
-    <li>La page replay permet de régénérer un modèle sauvegarder et de soit changer les types, soit changer les champs.</li>
-    <li>La page back permet d'activer ou de désactiver un type de champs.</li>
-</ul>
