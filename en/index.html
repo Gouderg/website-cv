@@ -13,25 +13,32 @@
     <link rel="stylesheet" href="../src/styles/03_header.css">
     <link rel="stylesheet" href="../src/styles/04_resume.css">
     <link rel="stylesheet" href="../src/styles/05_about.css">
-    <link rel="stylesheet" href="../src/styles/06_portolio.css">
-
+    <link rel="stylesheet" href="../src/styles/06_portfolio.css">
 
     <script src="../src/js/header.js" defer></script>
+    <script src="../src/js/folio.js" defer></script>
+
 </head>
 <body>
-    <section class="side">
-        <div class="side-photo-container">
-            <img class="side-photo" src="../public/photo_profil.jpeg" alt="Photo de profil">
-        </div>
-        
-        <div class="side-info-container">
-            <span class="side-name">Victor ILLIEN</span>
-            <span class="side-job">IA Software Engineer</span>
+    <section id="side" class="side">
+        <div class="side-basic-info">
+            <div class="side-photo-container">
+                <img class="side-photo" src="../public/photo_profil.jpeg" alt="Photo de profil">
+            </div>
+            
+            <div class="side-info-container">
+                <span class="side-name">Victor ILLIEN</span>
+                <span class="side-job">IA Software Engineer</span>
+            </div>
+    
+            <div id="side-arrow" class="side-arrow">
+                <img src="../public/icons/arrow-circle-down.svg" alt="Down Arrow">
+            </div>
         </div>
 
-        <hr class="side-separation" />
+        <hr id="side-separation" class="side-separation" />
 
-        <div class="side-contacts">
+        <div id="side-contacts" class="side-contacts">
             <div class="side-email">
                 <div>
                     <img class="side-contacts-icon" src="../public/icons/envelope.svg" alt="Mail Icon">
@@ -64,7 +71,7 @@
             </div>
         </div>
 
-        <div class="side-container-icons">
+        <div id="side-container-icons" class="side-container-icons">
             <a href="http://github.com/Gouderg" target="_blank">
                 <img src="../public/icons/github.svg" alt="Github Icon">
             </a>
@@ -88,13 +95,252 @@
                 <span class="main-section-title">About Me</span>
                 <hr class="main-section-separation">
             </div>
-          </section>
+  
+            <div>
+                <p class="main-text">
+                    Passionate about digital engineering and technical innovation, I work at the intersection of hardware and software. 
+                    From designing embedded systems to training artificial intelligence models, I build comprehensive full-stack solutions. 
+                    My goal is simple: to transform complex data streams into high-performance, elegant, and meaningful web interfaces.
+                </p>
+                    
+            </div>
+
+            <span class="about-title">Areas of expertise</span>
+            <div class="about-domaine">
+                <div class="about-card">
+                    <img class="about-card-icon" src="../public/icons/computer_vision.svg" alt="Computer Vision Icon">
+                    <div class="about-card-container">
+                        <span class="about-card-title">Artificial intelligence</span>
+                        <p class="about-card-text">Fine-tuning of multilabel models, classification and segmentation of images.</p>
+                    </div>
+                </div>
+                <div class="about-card">
+
+                    <img class="about-card-icon" src="../public/icons/fullstack.svg" alt="FullStack Icon">
+                    <div class="about-card-container">
+                        <span class="about-card-title">Web development</span>
+                        <p class="about-card-text">Creation of full-stack applications.</p>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <img class="about-card-icon" src="../public/icons/big_data.svg" alt="Data Icon">
+                    <div class="about-card-container">
+                        <span class="about-card-title">Data Management</span>
+                        <p class="about-card-text">Processing and normalization of massive data (<a class="about-link" href="https://doi.org/10.5281/zenodo.11125847" target="_blank" rel="noopener noreferrer">Seatizen Atlas</a>).</p>
+                    </div>    
+                </div>
+                <div class="about-card">
+                    <img class="about-card-icon" src="../public/icons/electronic.svg" alt="Electronic Icon">
+                    <div class="about-card-container">
+                        <span class="about-card-title">Electronics & IoT</span>
+                        <p class="about-card-text">Design and control of autonomous embedded systems.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <span class="about-title">Technical Skills</span>
+            <div class="about-stacks">
+                <div class="about-stack">
+                    <span>Front-End</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/next.svg" alt="NextJS Icon" title="NextJS">
+                        <img class="about-stack-icon" src="../public/icons/skills/tailwind.svg" alt="TailWind Icon" title="TailwindCSS">
+                        <img class="about-stack-icon" src="../public/icons/skills/ts.svg" alt="TS Icon" title="TypeScript">
+                    </div>
+                </div>
+                <div class="about-stack">
+                    <span>Back-End</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/symfony.svg" alt="Symfony Icon" title="Symfony">
+                        <img class="about-stack-icon" src="../public/icons/skills/fastapi.svg" alt="FastAPI Icon" title="FastAPI">
+                        <img class="about-stack-icon" src="../public/icons/skills/flask.svg" alt="Flask Icon" title="Flask">
+                        <img class="about-stack-icon" src="../public/icons/skills/nodejs.svg" alt="NodeJS Icon" title="NodeJS">
+                    </div>
+                </div>
+                <div class="about-stack">
+                    <span>Software</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/python.svg" alt="Python Icon" title="Python">
+                        <img class="about-stack-icon" src="../public/icons/skills/c++.svg" alt="C++ Icon" title="C++">
+                        <img class="about-stack-icon" src="../public/icons/skills/c.svg" alt="C Icon" title="C">
+                    </div>
+                </div>
+                <div class="about-stack">
+                    <span>OS/MCU</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/ubuntu.svg" alt="Ubuntu Icon" title="Ubuntu">
+                        <img class="about-stack-icon" src="../public/icons/skills/arduino.svg" alt="Arduino Icon" title="Arduino">
+                        <img class="about-stack-icon" src="../public/icons/skills/raspberry.svg" alt="Raspberry Icon" title="Raspberry">
+                    </div>
+                </div>
+                <div class="about-stack">
+                    <span>Server</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/nginx.svg" alt="Nginx Icon" title="Nginx">
+                        <img class="about-stack-icon" src="../public/icons/skills/apache.svg" alt="Apache Icon" title="Apache">
+                        <img class="about-stack-icon" src="../public/icons/skills/docker.svg" alt="Docker Icon" title="Docker">
+                    </div>
+                </div>
+                <div class="about-stack">
+                    <span>Database</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/mysql.svg" alt="MySQL Icon" title="MySQL">
+                        <img class="about-stack-icon" src="../public/icons/skills/sqlite.svg" alt="Sqlite Icon" title="SQLite">
+                        <img class="about-stack-icon" src="../public/icons/skills/postgresql.svg" alt="postgresql Icon" title="PostgreSQL">
+                    </div>
+                </div>
+                <div class="about-stack">
+                    <span>Tools & Design</span>
+                    <div>
+                        <img class="about-stack-icon" src="../public/icons/skills/QGIS.svg" alt="Qgis Icon" title="QGIS">
+                        <img class="about-stack-icon" src="../public/icons/skills/figma.svg" alt="Figma Icon" title="Figma">
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
         <section id="resume" class="section-container">
             <div class="main-section-header">
-                <span class="main-section-title">Resume</span>
+                <span class="main-section-title">CV</span>
                 <hr class="main-section-separation">
             </div>
+
+            <div class="timeline">
+                <div class="timeline-header">
+                    <img class="resume-icon" src="../public/icons/book-open.svg" alt="Education Icon">
+                    <span class="timeline-header-title">Education</span>
+                </div>
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                        <span class="ti-place">ISEN YCREA OUEST, Brest</span>
+                        <span class="ti-title">Engineer's degree in Signal Processing, specializing in Artificial Intelligence</span>
+                        <span class="ti-date">2018 — 2023</span>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="ti-place">Lycée Levavasseur, Reunion Island</span>
+                        <span class="ti-title">Scientific secondary school diploma</span>
+                        <span class="ti-date">2018</span>
+                    </li>
+                </ol>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-header">
+                    <img class="resume-icon" src="../public/icons/circuitry.svg" alt="Experience Icon">
+                    <span class="timeline-header-title">Experience</span>
+                </div>
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                        <span class="tiep-post">Bioinformatics Engineer — Lead Developer</span>
+                        <span class="tiep-entreprise">Ifremer Indian Ocean Delegation</span>
+                        <span class="tiep-date">Oct, 2023 — Dec 2025</span>
+                        <span class="tiep-place">Le Port, Reunion Island</span>
+                        <ul class="tiep-activities">
+                            <li>Creation of a workflow for 15 TB of data (2.6 million images) from acquisition to distribution using OGC standards, DarwinCore, and FAIR principles.</li>
+                            <li>Aggregation of fisheries data from the IOSSS/FLOPPED/GERMON/DMX/POPSICLE databases.</li>
+                            <li>Design of applications and servers (Next.js, FastAPI, Dash) for data visualization.</li>
+                            <li>Multilabel fine-tuning for automated classification/segmentation of marine taxa and substrates.</li>
+                            <li>Design and control of an autonomous catamaran for eDNA sampling. (pPumpit project)</li>
+                            <li>Maintenance and deployment of an ASV for marine data acquisition. (Plancha project)</li>
+                        </ul>
+                        <hr class="tiep-sep">
+                        <span class="tiep-title">Honors and Awards</span>
+                        <ul class="tiep-activities">
+                            <li><b>Prix Science Ouverte des Données de la Recherche (Team Award)</b><br>
+                            Issued by Ministère de l’Enseignement Supérieur, de la Recherche et de l’Espace, December 2025<br>
+                            Project: "Seatizen - Données d’imagerie des écosystèmes coralliens", <a href="https://www.enseignementsup-recherche.gouv.fr/fr/remise-des-prix-science-ouverte-edition-2025-100469" target="_blank" rel="noopener noreferrer"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a> </li>
+                        </ul>
+                        <hr class="tiep-sep">
+                        <span class="tiep-title">Publications</span>
+                        <ul class="tiep-activities">
+                            <li><b>The Point is the Mask: Scaling coral reef segmentation with weak supervision</b> M. Contini, <b>V. Illien</b>, <i> al. Proceedings of the IEEE/CVF International Conference on Computer Vision, 2025, <a rel="noopener noreferrer" target="_blank" href="https://openaccess.thecvf.com/content/ICCV2025W/CVAUI%20%26%20AAMVEM/html/Contini_The_point_is_the_mask_scaling_coral_reef_segmentation_with_ICCVW_2025_paper.html"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a></i></li>
+                            <li><b>From underwater to drone: A novel multi-scale knowledge distillation approach for coral reef monitoring</b> M. Contini, <b>V. Illien</b>, <i>et al. Ecological Informatics</i>, 2025, <a rel="noopener noreferrer" target="_blank" href="https://doi.org/10.1016/j.ecoinf.2025.103149"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a> </li>
+                            <li><b>Seatizen Atlas: a collaborative dataset of underwater and aerial marine imagery</b> M. Contini, <b>V. Illien</b>, <i>et al. Scientific Data</i>, 2025, <a rel="noopener noreferrer" target="_blank" href="https://doi.org/10.1038/s41597-024-04267-z"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a></li>
+                        </ul>
+                        <hr class="tiep-sep">
+                        <span class="tiep-title">Conferences</span>
+                        <ul class="tiep-activities">
+                            <li>Bridges x DATA TERRA 2025, 
+                                <a href="https://www.bridges-wio.com/fr/2026/01/13/ecoles-bridges-x-data-terra-une-premiere-edition-a-la-reunion-en-decembre-2025/" target="_blank" rel="noopener noreferrer">
+                                    <img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon">
+                                </a>
+                            </li>
+                            <li>Rencontres géomatique de la réunion 2024, <a href="https://www.youtube.com/watch?v=ZKwCdhyOxas" target="_blank" rel="noopener noreferrer"><img class="ti-icon-external" src="../public/icons/link-simple-horizontal.svg" alt="External Icon"></a></li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Full Stack Developer — Work-study</span>
+                        <span class="tiep-entreprise">CERVVAL</span>
+                        <span class="tiep-date">Oct. 2022 — Sept. 2023</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">Software for on-demand service ordering from RATP.</span>
+                        <ul class="tiep-activities">
+                            <li>Worked in a 7-person Agile team.</li>
+                            <li>Onboarded an in-house TypeScript framework and a software product after 2 years of development.</li>
+                            <li>Added new features involving all layers of the software stack.</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Developer, — Technical Internship M1</span>
+                        <span class="tiep-entreprise">CIIRC Czech Technical University</span>
+                        <span class="tiep-date">Oct. — Aug. 2022</span>
+                        <span class="tiep-place">Prague, Czech Republic</span>
+                        <span class="tiep-expe">Neural network based real-time eyetracking system.</span>
+                        <ul class="tiep-activities">
+                            <li>Training and inference using the Nvgaze architecture.</li>
+                            <li>Set up Nvidia TensorRT development environment from scratch.</li>
+                            <li>Optimized inference across all stages (video stream, predictions, writing).</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">M1 Project</span>
+                        <span class="tiep-entreprise">ISEN YNCREA OUEST</span>
+                        <span class="tiep-date">Jan. — Apr. 2022</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">Implementation of an energy monitoring system for an ISO 50001 SMEn.</span>
+                        <ul class="tiep-activities">
+                            <li>Design of Arduino modules integrating current, voltage, temperature and brightness sensors.</li>
+                            <li>Implementation of radio communication between Arduino modules and a Raspberry Pi for centralized data collection and storage.</li>
+                            <li>Configuration of the Raspberry Pi as an access point (hot-spot) and development of an interactive web interface to monitor the sensors and visualize the data in real time.</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Tutoring for Microsoft simplon training</span>
+                        <span class="tiep-entreprise">ISEN YNCREA OUEST</span>
+                        <span class="tiep-date">Jan. — May. 2021-22</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">60 hours of tutoring for several adults changing careers over two consecutive years.</span>
+                        <ul class="tiep-activities">
+                            <li>Support and explanation on the basics of Python and MySQL/MongoDB.</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">Wordpress site for a local brewery</span>
+                        <span class="tiep-entreprise">Storlok</span>
+                        <span class="tiep-date">Mar. — May. 2021</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">Website creation for a brewery in Finistère.</span>
+                        <ul class="tiep-activities">
+                            <li>Exploring the WordPress CMS.</li>
+                            <li>Domain name deployment and administration.</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <span class="tiep-post">First participation in Actinspace</span>
+                        <span class="tiep-entreprise">ActInSpace</span>
+                        <span class="tiep-date">November 2021</span>
+                        <span class="tiep-place">Brest, France</span>
+                        <span class="tiep-expe">Over the course of a weekend, I collaborated with three teammates on the MoonRover project, aimed at detecting water on the lunar surface.</span>
+                    </li>
+                </ol>
+            </div>
+
+            <a href="../public/pdf/cv_ILLIEN_en.pdf" download="cv_ILLIEN_VICTOR" class="btn-cv">
+                <img src="../public/icons/file-pdf.svg" alt="File Pdf Icon">
+                Download CV
+            </a>
         </section>
 
         <section id="portfolio" class="section-container">
@@ -102,9 +348,463 @@
                 <span class="main-section-title">Portfolio</span>
                 <hr class="main-section-separation">
             </div>
+            <div class="portfolio">
+                <ul id="folio_header" class="portfolio-header">
+                    <li id="folio-all" class="portfolio-header-active">All</li>
+                    <li id="folio-ifremer">Ifremer</li>
+                    <li id="folio-web">Web development</li>
+                    <li id="folio-software">Software</li>
+                </ul>
+
+                <div id="projects_section" class="projects">
+                    
+                     <div data-tag="web" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/appbroccoli.png" alt="App Broccoli">
+                                <div class="project-back">
+                                    <p>CSV and SQL data generator. Built with PHP.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/app-broccoli" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="project-title">App Broccoli</span>
+                            <span class="project-category">Web development</span>
+                        </div>
+                    </div>
+
+
+                    <div data-tag="web;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/seatizenmonitoring.jpg" alt="Seatizen Monitoring">
+                                <div class="project-back">
+                                    <p>Website NextJS to explore, visualize and download data from Seatizen Atlas database.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://seatizenmonitoring.ifremer.re/" target="_blank"rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/website-orange.svg" alt="Website"></a>
+                                        <a href="https://github.com/SeatizenDOI/seatizen-monitoring" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Seatizen Monitoring</span>
+                            <span class="project-category">Web development</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/zenodo-tools.jpg" alt="Zenodo Tools">
+                                <div class="project-back">
+                                    <p>Python tools to send a seatizen session to Zenodo.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://docs.ifremer.re/zenodo/zenodo-tools/" target="_blank"rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/website-orange.svg" alt="Website"></a>
+                                        <a href="https://github.com/SeatizenDOI/zenodo-tools" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Zenodo Tools</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/dinovdeau.jpg" alt="Dinovdeau">
+                                <div class="project-back">
+                                    <p>Code to train DinoVd'eau, a multilabel classification model for underwater images. </p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/SeatizenDOI/DinoVdeau" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">DinoVd'eau</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/plancha.JPG" alt="Plancha">
+                                <div class="project-back">
+                                    <p> Code to process raw data from a seatizen ASV. </p>
+                                    <div class="project-back-icons">
+                                        <a href="https://doi.org/10.5281/zenodo.15291312" target="_blank"rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/website-orange.svg" alt="Website"></a>
+                                        <a href="https://github.com/SeatizenDOI/plancha-workflow" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Plancha</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="web;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/popsicle.jpg" alt="Popsicle">
+                                <div class="project-back">
+                                    <p> Website NextJS for sampling Variola Louti in Reunion. </p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/SeatizenDOI/popsicle" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Popsicle</span>
+                            <span class="project-category">Web development</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/the-point-is-the-mask.jpg" alt="The Point Is The Mask">
+                                <div class="project-back">
+                                    <p> The point is the mask: scaling coral reef segmentation with weak supervision  </p>
+                                    <div class="project-back-icons">
+                                        <a href="https://openaccess.thecvf.com/content/ICCV2025W/CVAUI%20%26%20AAMVEM/html/Contini_The_point_is_the_mask_scaling_coral_reef_segmentation_with_ICCVW_2025_paper.html" target="_blank"rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/website-orange.svg" alt="Website"></a>
+                                        <a href="https://github.com/SeatizenDOI/the-point-is-the-mask" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">The Point is the mask</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software;ifremer" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/cog-server.jpg" alt="Cog Serveur">
+                                <div class="project-back">
+                                    <p>Code to serve rasters from seatizen sessions.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/SeatizenDOI/cog-server" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Cog Server</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/aoc.png" alt="AOC">
+                                <div class="project-back">
+                                    <p> My python solutions for Advent Of Code.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://adventofcode.com/" target="_blank"rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/website-orange.svg" alt="Website"></a>
+                                        <a href="https://github.com/Gouderg/advent-of-code" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Advent Of Code</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/boids.png" alt="Boids">
+                                <div class="project-back">
+                                    <p>Boids is an artificial life program, developed by Craig Reynolds in 1986, which simulates the flocking behaviour of birds. (C++)</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/Boids" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Boids</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/doublependule.png" alt="Double Pendule">
+                                <div class="project-back">
+                                    <p>Using C++ to simulate physical systems with code.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/dynamic-simulation" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="project-title">Dynamic Simulation</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+                    
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/fractal.png" alt="Fractal">
+                                <div class="project-back">
+                                    <p>Fractals simulation in C++</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/fractal-simulation" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="project-title">Fractals simulation</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/jeudelavie.png" alt="Jeu de la Vie">
+                                <div class="project-back">
+                                    <p>Game of life implementation in Python</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/jeuDeLaVie" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Game of life</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+                    
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/puissance4.png" alt="Puissance 4">
+                                <div class="project-back">
+                                    <p>Implementation in Python of a tictactoe, Puissance 4 and sudoku solver.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/JosephIA" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Joseph IA</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="web" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/learnstation.png" alt="Learn Station">
+                                <div class="project-back">
+                                    <p>Website developed in Symfony. Bootcamp SEO.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Learn-Station/learn-station" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Learn Station</span>
+                            <span class="project-category">Web development</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/maze.png" alt="Maze">
+                                <div class="project-back">
+                                    <p>Maze solver done in C in the first year of engineering school.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/ProjetC-2019-CIR1" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Maze Solver</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="web" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/presurized_octopus.jpg" alt="presurized_octopus">
+                                <div class="project-back">
+                                    <p>Scuba diving decompression calculator web app, built with Symfony and React.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/pressurized-octopus" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Pressurized Octopus</span>
+                            <span class="project-category">Web development</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/sortsound.png" alt="Sort Sound">
+                                <div class="project-back">
+                                    <p>C++ interface for sorting algorithm visualization with synchronized audio.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/sort-sound" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Sort Sound</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="web" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/wavespainting.png" alt="wavespainting">
+                                <div class="project-back">
+                                    <p>JS implementation of the Wave Function Collapse algorithm with a graphical interface.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/waves-drawing" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Waves painting</span>
+                            <span class="project-category">Web development</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/nnfs.png" alt="nnfs">
+                                <div class="project-back">
+                                    <p>C++ implementation of Neural Networks from Scratch (NNFS)</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/neuralib" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Neuralib</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/ants.png" alt="Ants">
+                                <div class="project-back">
+                                    <p>An experiment in Ant Colony algorithms using C++.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/Ants-colony" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Ants Colony</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/donut.gif" alt="Donut">
+                                <div class="project-back">
+                                    <p>Terminal-based 3D donut simulation in Rust.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/donut2D" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Donut 2D</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                    <div data-tag="software" class="project-card">
+                        <div class="project-front">
+                            <div class="project-img-container">
+                                <img class="project-img" src="../public/projects/salesman.png" alt="salesman">
+                                <div class="project-back">
+                                    <p>Solving the Traveling Salesperson Problem (TSP) using a genetic algorithm in Python.</p>
+                                    <div class="project-back-icons">
+                                        <a href="https://github.com/Gouderg/donut2D" target="_blank" rel="noopener noreferrer">
+                                            <img class="project-back-icon" src="../public/icons/github-orange.svg" alt="Github Icon">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <span class="project-title">Salesman Ag</span>
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
-
-
     </section>
 </body>
 </html>
